@@ -1,4 +1,5 @@
 #include <SFML/Graphics.hpp>
+#include "Andrey/Atlas/Atlas.h"
 
 int main()
 {
