@@ -1,3 +1,7 @@
 /battlecity/.vs
 /battlecity/bin
 /battlecity/build
+
+*.vcxproj.filters
+*.vcxproj.user
+*.sln
