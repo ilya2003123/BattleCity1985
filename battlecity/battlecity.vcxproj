@@ -173,9 +173,6 @@
     <None Include="src\YellowTank_1_W" />
   </ItemGroup>
   <ItemGroup>
-    <Image Include="Data\texture.png" />
-  </ItemGroup>
-  <ItemGroup>
     <Text Include="src\input_data.txt" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
