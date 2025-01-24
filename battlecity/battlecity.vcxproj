@@ -147,10 +147,30 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="src\Andrey\Atlas\Atlas.cpp" />
+    <ClCompile Include="src\Andrey\Resource_Loader\Resource_Loader.cpp" />
     <ClCompile Include="src\main.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="src\Andrey\Atlas\Atlas.h" />
+    <ClInclude Include="src\Andrey\Resource_Loader\Resource_Loader.h" />
+    <ClInclude Include="src\Settings.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <Text Include="src\YellowTank_1_W.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="Data\texture.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Data\resource\YellowTank_1_D" />
+    <None Include="Data\resource\YellowTank_1_L" />
+    <None Include="Data\resource\YellowTank_1_R" />
+    <None Include="Data\resource\YellowTank_1_U" />
+    <None Include="src\YellowTank_1_D" />
+    <None Include="src\YellowTank_1_L" />
+    <None Include="src\YellowTank_1_R" />
+    <None Include="src\YellowTank_1_U" />
+    <None Include="src\YellowTank_1_W" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
