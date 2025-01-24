@@ -156,9 +156,6 @@
     <ClInclude Include="src\Settings.h" />
   </ItemGroup>
   <ItemGroup>
-    <Text Include="src\YellowTank_1_W.txt" />
-  </ItemGroup>
-  <ItemGroup>
     <Image Include="Data\texture.png" />
   </ItemGroup>
   <ItemGroup>
@@ -171,9 +168,6 @@
     <None Include="src\YellowTank_1_R" />
     <None Include="src\YellowTank_1_U" />
     <None Include="src\YellowTank_1_W" />
-  </ItemGroup>
-  <ItemGroup>
-    <Text Include="src\input_data.txt" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
