@@ -152,6 +152,12 @@
   <ItemGroup>
     <ClInclude Include="src\Andrey\Atlas\Atlas.h" />
   </ItemGroup>
+  <ItemGroup>
+    <Image Include="Data\texture.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Text Include="src\input_data.txt" />
+  </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
   </ImportGroup>
