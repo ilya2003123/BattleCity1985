@@ -1,28 +1,22 @@
 #include"Atlas.h"
-#include <vector>
-#include <iostream>
-#include <fstream>
-#include <sstream>
-#include "SFML/Graphics.hpp"
-
 
 std::vector<sf::IntRect> Atlas::createIntRect(std::string path)
 {
-    std::ifstream file(path);                                                       // Открываем файл для чтения
-    if (!file.is_open())                                                           // Проверяем, что файл открылся успешно
+    std::ifstream file(path);                                                     
+    if (!file.is_open())                                                           
     {
-        std::cerr << "Ошибка при открытии файла: " + path << std::endl;
+        std::cerr << "Can't open file: " + path << std::endl;
     }
-    std::vector<int> numbers;                                                      // Массив для хранения чисел
-    std::string line;                                                              // Строка для чтения каждой строки из файла
+    std::vector<int> numbers;                                                    
+    std::string line;                                                              
     std::vector<sf::IntRect> vectorIntRect;
-    while (std::getline(file, line))                                               // Чтение файла построчно
+    while (std::getline(file, line))                                      
     {
-        std::istringstream stream(line);                                           // Создаём строковый поток для обработки каждой строки
+        std::istringstream stream(line);                                  
         int num;
         while (stream >> num)
         {
-            numbers.push_back(num);                                                // Добавляем число в вектор
+            numbers.push_back(num);                                            
         }
     }
     file.close();
