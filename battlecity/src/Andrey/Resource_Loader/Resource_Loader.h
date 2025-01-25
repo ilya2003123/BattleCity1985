@@ -1,13 +1,15 @@
 #pragma once
 
-#include <vector>
 #include <iostream>
 #include <fstream>
-#include <sstream>
 #include "SFML/Graphics.hpp"
+#include "../../Settings.h"
 
-class Recource_Loader
+class Resource_Loader
 {
 public:
-	//std::string findTexture();
+	Resource_Loader(std::string path);
+	sf::Texture getTexture();
+private:
+	sf::Texture m_texture;
 };
