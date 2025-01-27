@@ -147,6 +147,7 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="src\AnimController\AnimLambdaController.cpp" />
+    <ClCompile Include="src\AnimController\AnimWaterController.cpp" />
     <ClCompile Include="src\AnimSprite\AnimSprite\AnimSprite.cpp" />
     <ClCompile Include="src\AnimSprite\AnimTools\Animated.cpp" />
     <ClCompile Include="src\AnimSprite\externalAnimSprite\AnimatedSprite.cpp" />
@@ -163,6 +164,7 @@
     <ClInclude Include="src\AnimController\AnimLambdaController.h" />
     <ClInclude Include="src\AnimController\AnimMockController.h" />
     <ClInclude Include="src\AnimController\IAnimController.h" />
+    <ClInclude Include="src\AnimController\AnimWaterController.h" />
     <ClInclude Include="src\AnimSprite\AnimSprite\AnimSprite.h" />
     <ClInclude Include="src\AnimSprite\AnimTools\Animated.h" />
     <ClInclude Include="src\AnimSprite\externalAnimSprite\AnimatedSprite.h" />
@@ -170,6 +172,7 @@
     <ClInclude Include="src\App\AbstractApp.h" />
     <ClInclude Include="src\App\App.h" />
     <ClInclude Include="src\Atlas\Atlas.h" />
+    <ClInclude Include="src\DataLoad\DataLoad.h" />
     <ClInclude Include="src\IRenderEngine\IRenderEngine.h" />
     <ClInclude Include="src\IRenderEngine\RenderSFML.h" />
     <ClInclude Include="src\IScene\IScene.h" />

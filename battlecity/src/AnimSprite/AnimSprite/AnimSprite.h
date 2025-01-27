@@ -15,13 +15,13 @@ public:
 	AnimSprite() = delete;
 	AnimSprite(const std::map<std::string, Animation>& animations,
 		IAnimController* controller = new AnimMockController(),
-		const sf::Time = sf::seconds(0.2), bool pause = true, bool repeat = false);
-	virtual ~AnimSprite() = default;
+		const sf::Time = sf::seconds(0.2), bool pause = true, bool repeat = true);
+	~AnimSprite() = default;
 
 	void setState(const std::string& nameState);
 	void setController(IAnimController* controller);
 	void setController(std::function<MoveData(EventData&, AnimData&)> controller);
-	void update(sf::Event event, sf::Time frameTime);
+	void update(sf::Event& event, sf::Time frameTime);
 	void draw(sf::RenderTarget& target, sf::RenderStates states) const override;
 
 private:

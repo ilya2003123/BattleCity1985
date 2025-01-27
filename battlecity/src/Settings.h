@@ -12,6 +12,19 @@ namespace utils
 	//	std::cout << k << "\n";
 	//	return malloc(size);
 	// }
+	const sf::Vector2f waterPosition(100, 100);
+
+	const std::map<std::string, std::vector<std::tuple<int, bool, int, int>>> framesWater =
+	{
+		{
+			"flow",
+			{
+				{0, 0, -1, -1},
+				{1, 0, -1, -1},
+				{2, 0, -1, -1}
+			}
+		}
+	};
 
 	template <typename T>
 	void print(const T& data, bool newLine = true)

@@ -6,7 +6,7 @@
 
 namespace Tools
 {
-	Animation generateAnimation(const sf::Texture& textureAtlas, std::vector<sf::IntRect> rectFrames);
+	Animation generateAnimation(const sf::Texture textureAtlas, std::vector<sf::IntRect> rectFrames);
 	AnimatedSprite generateAnimatedSprite(sf::Time frameTime = sf::seconds(0.2), bool pause = true, bool repeat = false);
 }
 

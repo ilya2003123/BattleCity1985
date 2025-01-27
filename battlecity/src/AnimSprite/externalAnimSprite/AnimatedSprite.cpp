@@ -26,7 +26,7 @@
 AnimatedSprite::AnimatedSprite(sf::Time frameTime, bool paused, bool looped) :
     m_animation(NULL), m_frameTime(frameTime),
     m_currentFrame(0), m_isPaused(paused),
-    m_isLooped(looped), m_texture(NULL)
+    m_isLooped(looped), m_texture()
 {
 
 }
@@ -185,10 +185,10 @@ void AnimatedSprite::update(sf::Time deltaTime)
 
 void AnimatedSprite::draw(sf::RenderTarget& target, sf::RenderStates states) const
 {
-    if (m_animation && m_texture)
+    if (m_animation)
     {
         states.transform *= getTransform();
-        states.texture = m_texture;
+        states.texture = &m_texture;
         target.draw(m_vertices, 4, sf::Quads, states);
     }
 }

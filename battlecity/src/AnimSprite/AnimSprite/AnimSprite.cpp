@@ -27,7 +27,7 @@ void AnimSprite::setController(std::function<MoveData(EventData&, AnimData&)> co
     m_currController = new AnimLambdaController(controller);
 }
 
-void AnimSprite::update(sf::Event event, sf::Time frameTime)
+void AnimSprite::update(sf::Event& event, sf::Time frameTime)
 {
     AnimData animData{ m_animations, m_currentAnimation };
     EventData ev{ event, frameTime };

@@ -1,7 +1,9 @@
 #pragma once
 
+#pragma warning(push, 0)
 #include <string>
 #include <iostream>
+#pragma warning(pop)
 
 #include "AbstractApp.h"
 #include "../Window/Window.h"

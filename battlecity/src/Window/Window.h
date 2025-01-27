@@ -3,11 +3,14 @@
 #include "AbstractWindow.h"
 #include "../IScene/IScene.h"
 #include "../IRenderEngine/RenderSFML.h"
+#include "../Resource_Loader/Resource_Loader.h"
+#include "../DataLoad/DataLoad.h"
+#include "../AnimController/AnimWaterController.h"
 
-//#pragma warning(push, 0)
+#pragma warning(push, 0)
 #include <string>
 #include <SFML/Graphics.hpp>
-//#pragma warning(pop)
+#pragma warning(pop)
 
 class Window : public AbstractWindow
 {

@@ -23,7 +23,7 @@
 
 #include "Animation.h"
 
-Animation::Animation() : m_texture(NULL)
+Animation::Animation() : m_texture()
 {
 
 }
@@ -33,12 +33,12 @@ void Animation::addFrame(sf::IntRect rect)
     m_frames.push_back(rect);
 }
 
-void Animation::setSpriteSheet(const sf::Texture& texture)
+void Animation::setSpriteSheet(const sf::Texture texture)
 {
-    m_texture = &texture;
+    m_texture = texture;
 }
 
-const sf::Texture* Animation::getSpriteSheet() const
+sf::Texture Animation::getSpriteSheet() const
 {
     return m_texture;
 }
