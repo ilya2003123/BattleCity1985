@@ -160,29 +160,29 @@
     <ClInclude Include="src\Settings.h" />
   </ItemGroup>
   <ItemGroup>
-    <Image Include="Data\texture.png" />
+    <Image Include="data\texture.png" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Data\resource\Blocks\ArchBrickWall" />
-    <None Include="Data\resource\Blocks\ArchConcreteWall" />
-    <None Include="Data\resource\Blocks\BreakEagle" />
-    <None Include="Data\resource\Blocks\BrickWall" />
-    <None Include="Data\resource\Blocks\ConcreteWall" />
-    <None Include="Data\resource\Blocks\Eagle" />
-    <None Include="Data\resource\Blocks\HalfBrickWall" />
-    <None Include="Data\resource\Blocks\HalfConcreteWall" />
-    <None Include="Data\resource\Blocks\Ice" />
-    <None Include="Data\resource\Blocks\SmallArchBrickWall" />
-    <None Include="Data\resource\Blocks\SmallBrickWall" />
-    <None Include="Data\resource\Blocks\SmallConcreteWall" />
-    <None Include="Data\resource\Blocks\SmallHalfBrickWall" />
-    <None Include="Data\resource\Blocks\SmallIce" />
-    <None Include="Data\resource\Blocks\SmallTree" />
-    <None Include="Data\resource\Blocks\SmallWater" />
-    <None Include="Data\resource\Blocks\Tree" />
-    <None Include="Data\resource\Blocks\Water" />
+    <None Include="data\resource\blocks\archBrickWall" />
+    <None Include="data\resource\blocks\archConcreteWall" />
+    <None Include="data\resource\blocks\breakEagle" />
+    <None Include="data\resource\blocks\brickWall" />
+    <None Include="data\resource\blocks\concreteWall" />
+    <None Include="Data\resource\blocks\eagle" />
+    <None Include="Data\resource\blocks\halfBrickWall" />
+    <None Include="Data\resource\blocks\halfConcreteWall" />
+    <None Include="Data\resource\blocks\ice" />
+    <None Include="Data\resource\Blocks\smallArchBrickWall" />
+    <None Include="Data\resource\blocks\smallBrickWall" />
+    <None Include="Data\resource\blocks\smallConcreteWall" />
+    <None Include="Data\resource\blocks\smallHalfBrickWall" />
+    <None Include="Data\resource\blocks\smallIce" />
+    <None Include="Data\resource\blocks\smallTree" />
+    <None Include="Data\resource\blocks\smallWater" />
+    <None Include="Data\resource\blocks\tree" />
+    <None Include="Data\resource\blocks\water" />
     <None Include="Data\resource\Boarder" />
-    <None Include="Data\resource\Bomb" />
+    <None Include="Data\resource\bomb" />
     <None Include="Data\resource\Boosters\Bomb" />
     <None Include="Data\resource\Boosters\DoubleDamage" />
     <None Include="Data\resource\Boosters\ExtraLife" />
@@ -191,7 +191,7 @@
     <None Include="Data\resource\Boosters\Shovel" />
     <None Include="Data\resource\Boosters\Time" />
     <None Include="data\resource\border" />
-    <None Include="Data\resource\Born" />
+    <None Include="Data\resource\born" />
     <None Include="Data\resource\Bullet\Bullet_D" />
     <None Include="Data\resource\Bullet\Bullet_L" />
     <None Include="Data\resource\Bullet\Bullet_R" />
