@@ -1,8 +1,30 @@
 #pragma once
 #include <iostream>
 
-namespace utils 
+namespace utils
 {
+
+	//static int k = 0; 
+	//
+	//inline void* operator new(size_t size) 
+	// {
+	//	k+=size;
+	//	std::cout << k << "\n";
+	//	return malloc(size);
+	// }
+
+	template <typename T>
+	void print(const T& data, bool newLine = true)
+	{
+		std::cout << data << ((newLine) ? "\n" : "");
+	}
+
+	const int APP_FPS = 60;
+
+	const std::string APP_TITLE_WINDOW = "Battle City";
+	const int APP_WIDTH = 800;
+	const int APP_HEIGHT = 600;
+
 	const std::string MAIN_PATH_TO_DATA = "data/";
 	const std::string MAIN_PATH_TO_RESOURCE = "resource/";
 	const std::string MAIN_PATH_TO_YELLOW_TANK = "yellow/";
@@ -48,7 +70,7 @@ namespace utils
 	const std::string  PATH_TO_YELLOW_TANK_8_L = MAIN_PATH_TO_DATA + MAIN_PATH_TO_RESOURCE + MAIN_PATH_TO_YELLOW_TANK + "yellowTank_8_L";
 	const std::string  PATH_TO_YELLOW_TANK_8_R = MAIN_PATH_TO_DATA + MAIN_PATH_TO_RESOURCE + MAIN_PATH_TO_YELLOW_TANK + "yellowTank_8_R";
 	const std::string  PATH_TO_YELLOW_TANK_8_D = MAIN_PATH_TO_DATA + MAIN_PATH_TO_RESOURCE + MAIN_PATH_TO_YELLOW_TANK + "yellowTank_8_D";
-																														 
+
 	const std::string  PATH_TO_RED_TANK_1_U = MAIN_PATH_TO_DATA + MAIN_PATH_TO_RESOURCE + MAIN_PATH_TO_RED_TANK + "redTank_1_U";
 	const std::string  PATH_TO_RED_TANK_1_L = MAIN_PATH_TO_DATA + MAIN_PATH_TO_RESOURCE + MAIN_PATH_TO_RED_TANK + "redTank_1_L";
 	const std::string  PATH_TO_RED_TANK_1_R = MAIN_PATH_TO_DATA + MAIN_PATH_TO_RESOURCE + MAIN_PATH_TO_RED_TANK + "redTank_1_R";

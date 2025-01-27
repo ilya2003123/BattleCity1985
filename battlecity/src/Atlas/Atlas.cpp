@@ -5,7 +5,7 @@ std::vector<sf::IntRect> Atlas::createIntRect(std::string path)
     std::ifstream file(path);                                                     
     if (!file.is_open())                                                           
     {
-        std::cerr << "Can't open file: " + path << std::endl;
+        utils::print("Can't open file: " + path);
     }
     std::vector<int> numbers;                                                    
     std::string line;                                                              

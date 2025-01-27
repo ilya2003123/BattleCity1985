@@ -1,13 +1,19 @@
 #pragma once
-#include "../Settings.h"
-#include <iostream>
+
 #include <fstream>
 #include <sstream>
-#include <vector>
 #include "SFML/Graphics.hpp"
+#include "../Settings.h"
+
 class Atlas
 {
 	public:
+		Atlas() = default;
+		Atlas(const Atlas& other) = delete;
+		Atlas(Atlas&& other) noexcept = delete;
+		Atlas& operator=(const Atlas& other) = delete;
+		Atlas& operator=(Atlas&& other) noexcept = delete;
+		~Atlas() = default;
 		std::vector<sf::IntRect>  createIntRect(std::string path);
 };
 
