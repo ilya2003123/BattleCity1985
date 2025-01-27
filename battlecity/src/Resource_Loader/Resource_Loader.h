@@ -3,7 +3,7 @@
 #include <iostream>
 #include <fstream>
 #include "SFML/Graphics.hpp"
-#include "../../Settings.h"
+#include "../Settings.h"
 
 class Resource_Loader
 {
