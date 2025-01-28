@@ -1,6 +1,6 @@
 #include "Animated.h"
 
-Animation Tools::generateAnimation(const sf::Texture textureAtlas, std::vector<sf::IntRect> rectFrames)
+Animation Tools::generateAnimation(const sf::Texture& textureAtlas, std::vector<sf::IntRect> rectFrames)
 {
 	Animation animation;
 	animation.setSpriteSheet(textureAtlas);

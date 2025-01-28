@@ -1,6 +1,6 @@
 #include"Resource_Loader.h"
 
-Resource_Loader::Resource_Loader(std::string path)
+Resource_Loader::Resource_Loader(const std::string& path)
 {
 	std::ifstream file(path);
 	if (!file.is_open())
@@ -16,7 +16,7 @@ Resource_Loader::Resource_Loader(std::string path)
 	};
 };
 
-sf::Texture Resource_Loader::getTexture()
+const sf::Texture& Resource_Loader::getTexture() const
 {
 	return m_texture;
 }

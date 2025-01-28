@@ -4,7 +4,6 @@
 #include "../Atlas/Atlas.h"
 #include "../Settings.h"
 #include "../AnimSprite/AnimTools/Animated.h"
-#include <iostream>
 #include <map>
 #include <memory>
 
@@ -17,7 +16,7 @@ namespace Holder
 namespace Loader
 {
 
-	inline std::vector<sf::IntRect> rebuildFrame(sf::IntRect rect, int nFrames = 2, int sizeRect = 16)
+	static std::vector<sf::IntRect> rebuildFrame(sf::IntRect rect, int nFrames = 2, int sizeRect = 16)
 	{
 		std::vector<sf::IntRect> rects;
 
@@ -27,7 +26,7 @@ namespace Loader
 		return rects;
 	}
 
-	inline auto loaderData(const std::vector<sf::IntRect>& rowRect, const Holder::Settings& settings)
+	static auto loaderData(const std::vector<sf::IntRect>& rowRect, const Holder::Settings& settings)
 	{
 		std::map<std::string, std::vector<sf::IntRect>> framesResult;
 

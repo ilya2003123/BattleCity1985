@@ -6,7 +6,7 @@ AnimWaterController::AnimWaterController()
 		{
 			const float speed = 0;
 			anim.currentAnimation = &anim.animations["flow"];
-			return MoveData({ 0,0 }, false, true);
+			return MoveData({ 0, 0 }, false, speed);
 		};
 }
 

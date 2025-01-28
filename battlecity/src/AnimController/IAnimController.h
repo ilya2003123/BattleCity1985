@@ -26,7 +26,7 @@ class IAnimController
 {
 public:
 	IAnimController() = default;
-	~IAnimController() = default;
+	virtual ~IAnimController() = default;
 
 	virtual MoveData update(EventData& data, AnimData& anim) = 0;
 };

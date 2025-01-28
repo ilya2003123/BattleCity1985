@@ -3,7 +3,6 @@
 #include "AbstractWindow.h"
 #include "../IScene/IScene.h"
 #include "../IRenderEngine/RenderSFML.h"
-#include "../Resource_Loader/Resource_Loader.h"
 #include "../DataLoad/DataLoad.h"
 #include "../AnimController/AnimWaterController.h"
 

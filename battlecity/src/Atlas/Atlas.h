@@ -14,6 +14,6 @@ class Atlas
 		Atlas& operator=(const Atlas& other) = delete;
 		Atlas& operator=(Atlas&& other) noexcept = delete;
 		~Atlas() = default;
-		static std::vector<sf::IntRect> createIntRect(std::string path);
+		static std::vector<sf::IntRect> createIntRect(const std::string& path);
 };
 

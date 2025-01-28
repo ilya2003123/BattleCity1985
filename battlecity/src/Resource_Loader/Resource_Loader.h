@@ -13,9 +13,10 @@ public:
 	Resource_Loader& operator=(const Resource_Loader& other) = delete;
 	Resource_Loader& operator=(Resource_Loader&& other) noexcept = delete;
 	virtual ~Resource_Loader() = default;
-	Resource_Loader(std::string path);
 
-	sf::Texture getTexture();
+	Resource_Loader(const std::string& path);
+
+	const sf::Texture& getTexture() const;
 
 private:
 	sf::Texture m_texture;
