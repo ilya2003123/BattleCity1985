@@ -4,9 +4,9 @@ AnimWaterController::AnimWaterController()
 {
 	m_callback = [](EventData& data, AnimData& anim)
 		{
-			const float speed = 0;
+			const float SPEED = 0.0f;
 			anim.currentAnimation = &anim.animations["flow"];
-			return MoveData({ 0, 0 }, false, speed);
+			return MoveData({ 0, 0 }, false, SPEED);
 		};
 }
 

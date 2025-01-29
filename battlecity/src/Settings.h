@@ -8,7 +8,7 @@ namespace utils
 	//
 	//inline void* operator new(size_t size) 
 	// {
-	//	k+=size;
+	//	k+=size; 
 	//	std::cout << k << "\n";
 	//	return malloc(size);
 	// }
@@ -24,6 +24,34 @@ namespace utils
 				{2, 0, -1, -1}
 			}
 		}
+	};
+
+	const std::map<std::string, std::vector<std::tuple<int, bool, int, int>>> framesYellowTank =
+	{
+		{
+			"left",
+			{
+				{0, 1, 2, 16}
+			}
+		},
+		{
+			"up",
+			{
+				{2, 1, 2, 16}
+			}
+		},
+		{
+			"down",
+			{
+				{4, 1, 2, 16}
+			}
+		},
+		{
+			"right",
+			{
+				{6, 1, 2, 16}
+			}
+		},
 	};
 
 	template <typename T>
@@ -51,10 +79,7 @@ namespace utils
 	const std::string MAIN_PATH_TO_EXPLOSION = "explosion/";
 	const std::string MAIN_PATH_TO_REWARD = "reward/";
 
-	const std::string  PATH_TO_YELLOW_TANK_1_U = MAIN_PATH_TO_DATA + MAIN_PATH_TO_RESOURCE + MAIN_PATH_TO_YELLOW_TANK + "yellowTank_1_U";
-	const std::string  PATH_TO_YELLOW_TANK_1_L = MAIN_PATH_TO_DATA + MAIN_PATH_TO_RESOURCE + MAIN_PATH_TO_YELLOW_TANK + "yellowTank_1_L";
-	const std::string  PATH_TO_YELLOW_TANK_1_R = MAIN_PATH_TO_DATA + MAIN_PATH_TO_RESOURCE + MAIN_PATH_TO_YELLOW_TANK + "yellowTank_1_R";
-	const std::string  PATH_TO_YELLOW_TANK_1_D = MAIN_PATH_TO_DATA + MAIN_PATH_TO_RESOURCE + MAIN_PATH_TO_YELLOW_TANK + "yellowTank_1_D";
+	const std::string  PATH_TO_YELLOW_TANK_1 = MAIN_PATH_TO_DATA + MAIN_PATH_TO_RESOURCE + MAIN_PATH_TO_YELLOW_TANK + "yellowTank_1";
 	const std::string  PATH_TO_YELLOW_TANK_2_U = MAIN_PATH_TO_DATA + MAIN_PATH_TO_RESOURCE + MAIN_PATH_TO_YELLOW_TANK + "yellowTank_2_U";
 	const std::string  PATH_TO_YELLOW_TANK_2_L = MAIN_PATH_TO_DATA + MAIN_PATH_TO_RESOURCE + MAIN_PATH_TO_YELLOW_TANK + "yellowTank_2_L";
 	const std::string  PATH_TO_YELLOW_TANK_2_R = MAIN_PATH_TO_DATA + MAIN_PATH_TO_RESOURCE + MAIN_PATH_TO_YELLOW_TANK + "yellowTank_2_R";

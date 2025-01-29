@@ -5,6 +5,7 @@
 #include "../IRenderEngine/RenderSFML.h"
 #include "../DataLoad/DataLoad.h"
 #include "../AnimController/AnimWaterController.h"
+#include "../AnimController/AnimTankController.h"
 
 #pragma warning(push, 0)
 #include <string>

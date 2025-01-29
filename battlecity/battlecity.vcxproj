@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?>
+﻿<?xml version="1.0" encoding="utf-8"?>
 <Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <ItemGroup Label="ProjectConfigurations">
     <ProjectConfiguration Include="Debug|Win32">
@@ -147,6 +147,7 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="src\AnimController\AnimLambdaController.cpp" />
+    <ClCompile Include="src\AnimController\AnimTankController.cpp" />
     <ClCompile Include="src\AnimController\AnimWaterController.cpp" />
     <ClCompile Include="src\AnimSprite\AnimSprite\AnimSprite.cpp" />
     <ClCompile Include="src\AnimSprite\AnimTools\Animated.cpp" />
@@ -156,13 +157,16 @@
     <ClCompile Include="src\Atlas\Atlas.cpp" />
     <ClCompile Include="src\IRenderEngine\RenderSFML.cpp" />
     <ClCompile Include="src\IScene\IScene.cpp" />
+    <ClCompile Include="src\ITank\ITank.cpp" />
     <ClCompile Include="src\Resource_Loader\Resource_Loader.cpp" />
     <ClCompile Include="src\main.cpp" />
     <ClCompile Include="src\Window\Window.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="src\AbstractGameObject\AbstractGameObject.h" />
     <ClInclude Include="src\AnimController\AnimLambdaController.h" />
     <ClInclude Include="src\AnimController\AnimMockController.h" />
+    <ClInclude Include="src\AnimController\AnimTankController.h" />
     <ClInclude Include="src\AnimController\IAnimController.h" />
     <ClInclude Include="src\AnimController\AnimWaterController.h" />
     <ClInclude Include="src\AnimSprite\AnimSprite\AnimSprite.h" />
@@ -177,6 +181,7 @@
     <ClInclude Include="src\IRenderEngine\RenderSFML.h" />
     <ClInclude Include="src\IScene\IScene.h" />
     <ClInclude Include="src\ISprite\ISprite.h" />
+    <ClInclude Include="src\ITank\ITank.h" />
     <ClInclude Include="src\Resource_Loader\Resource_Loader.h" />
     <ClInclude Include="src\Settings.h" />
     <ClInclude Include="src\Window\AbstractWindow.h" />

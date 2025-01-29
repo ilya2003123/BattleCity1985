@@ -79,4 +79,9 @@ namespace resource
 	{
 		return create(utils::PATH_TO_WATER, utils::framesWater);
 	}
+
+	static std::map<std::string, Animation> dataForYellowTank()
+	{
+		return create(utils::PATH_TO_YELLOW_TANK_1, utils::framesYellowTank);
+	}
 }
