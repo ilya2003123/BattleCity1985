@@ -13,6 +13,8 @@ public:
 	virtual ~ITank() = default;
 	ITank(const ITank& other) = delete;
 	ITank(const ITank&& other) = delete;
+	ITank& operator=(const ITank& other) = delete;
+	ITank& operator=(ITank&& other) noexcept = default;
 
 	void draw(sf::RenderTarget& target, sf::RenderStates states) const override;
 	void update(sf::Event& event, sf::Time frameTime) override;

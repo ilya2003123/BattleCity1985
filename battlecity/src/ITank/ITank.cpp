@@ -4,7 +4,7 @@ ITank::ITank(float x, float y)
 	: m_x(x), m_y(y), m_animSprite(resource::dataForYellowTank(), new AnimTankController())
 {
 	m_animSprite.setPosition(x, y);
-	m_animSprite.setState("move");
+	m_animSprite.setState("up");
 }
 
 void ITank::draw(sf::RenderTarget& target, sf::RenderStates states) const

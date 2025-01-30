@@ -82,6 +82,19 @@ namespace resource
 
 	static std::map<std::string, Animation> dataForYellowTank()
 	{
-		return create(utils::PATH_TO_YELLOW_TANK_1, utils::framesYellowTank);
+		return create(utils::PATH_TO_YELLOW_TANK_1, utils::framesTank);
 	}
+	static std::map<std::string, Animation> dataForRedTank()
+	{
+		return create(utils::PATH_TO_RED_TANK_1, utils::framesTank);
+	}
+	static std::map<std::string, Animation> dataForGreyTank()
+	{
+		return create(utils::PATH_TO_GREY_TANK_1, utils::framesTank);
+	}
+	static std::map<std::string, Animation> dataForGreenTank()
+	{
+		return create(utils::PATH_TO_GREEN_TANK_1, utils::framesTank);
+	}
+
 }
