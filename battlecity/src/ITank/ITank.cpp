@@ -36,37 +36,49 @@ void ITank::update(sf::Event& event, sf::Time frameTime)
 		m_vx = m_speed;
 		m_vy = 0;
 		break;
-	default:
-		m_vx = 0;
-		m_vy = 0;
-		break;
 	}
 	m_x = m_vx * frameTime.asSeconds();
 	m_y = m_vy * frameTime.asSeconds();
 	m_speed = 0;
-	m_animSprite.move(m_vx, m_vy);
+	if (m_isRestart) m_animSprite.move(m_vx, m_vy);
 }
 
 void ITank::TankControl(sf::Event& event, sf::Time frameTime)
 {
-	if (sf::Keyboard::isKeyPressed(sf::Keyboard::A) || sf::Keyboard::isKeyPressed(sf::Keyboard::Left))
+	if (frameTime.asSeconds() > 0) m_isRestart = 1;
+	else m_isRestart = 0;
+
+	const bool isMovingLeft = sf::Keyboard::isKeyPressed(sf::Keyboard::A);
+	const bool isMovingUp = sf::Keyboard::isKeyPressed(sf::Keyboard::W);
+	const bool isMovingDown = sf::Keyboard::isKeyPressed(sf::Keyboard::S);
+	const bool isMovingRight = sf::Keyboard::isKeyPressed(sf::Keyboard::D);
+
+	sf::Keyboard::Key keyReleased = sf::Keyboard::Unknown;
+	if (event.type == sf::Event::KeyReleased) keyReleased = event.key.code;
+	if (keyReleased == m_keyPressed) m_keyPressed = sf::Keyboard::Unknown;
+
+	if (isMovingLeft && (m_keyPressed == sf::Keyboard::A || m_keyPressed == sf::Keyboard::Unknown))
 	{
 		m_control = 0;
 		m_speed = SPEED;
+		m_keyPressed = sf::Keyboard::A;
 	}
-	if (sf::Keyboard::isKeyPressed(sf::Keyboard::W) || sf::Keyboard::isKeyPressed(sf::Keyboard::Up))
+	if (isMovingUp && (m_keyPressed == sf::Keyboard::W || m_keyPressed == sf::Keyboard::Unknown))
 	{
 		m_control = 1;
 		m_speed = SPEED;
+		m_keyPressed = sf::Keyboard::W;
 	}
-	if (sf::Keyboard::isKeyPressed(sf::Keyboard::S) || sf::Keyboard::isKeyPressed(sf::Keyboard::Down))
+	if (isMovingDown && (m_keyPressed == sf::Keyboard::S || m_keyPressed == sf::Keyboard::Unknown))
 	{
 		m_control = 2;
 		m_speed = SPEED;
+		m_keyPressed = sf::Keyboard::S;
 	}
-	if (sf::Keyboard::isKeyPressed(sf::Keyboard::D) || sf::Keyboard::isKeyPressed(sf::Keyboard::Right))
+	if (isMovingRight && (m_keyPressed == sf::Keyboard::D || m_keyPressed == sf::Keyboard::Unknown))
 	{
 		m_control = 3;
 		m_speed = SPEED;
+		m_keyPressed = sf::Keyboard::D;
 	}
 }

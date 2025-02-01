@@ -4,7 +4,7 @@ IWater::IWater(float x, float y)
 	: m_x(x), m_y(y), m_animSprite(resource::dataForWater(), new AnimWaterController())
 {
 	m_animSprite.setPosition(x, y);
-	m_animSprite.setState("flew");
+	m_animSprite.setState("flow");
 }
 void IWater::draw(sf::RenderTarget& target, sf::RenderStates states) const
 {

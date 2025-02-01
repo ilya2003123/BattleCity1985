@@ -20,4 +20,5 @@ public:
 
 private:
 	Callback m_callback;
+	sf::Keyboard::Key m_keyPressed = sf::Keyboard::Unknown;
 };

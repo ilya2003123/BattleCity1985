@@ -2,29 +2,43 @@
 
 AnimTankController::AnimTankController()
 {
-	m_callback = [](EventData& data, AnimData& anim)
+	m_callback = [&](EventData& data, AnimData& anim)
 		{
+			const bool isMovingLeft = sf::Keyboard::isKeyPressed(sf::Keyboard::A);
+			const bool isMovingUp = sf::Keyboard::isKeyPressed(sf::Keyboard::W);
+			const bool isMovingDown = sf::Keyboard::isKeyPressed(sf::Keyboard::S);
+			const bool isMovingRight = sf::Keyboard::isKeyPressed(sf::Keyboard::D);
+
+			sf::Keyboard::Key keyReleased = sf::Keyboard::Unknown;
+			if (data.event.type == sf::Event::KeyReleased) keyReleased = data.event.key.code;
+			if (keyReleased == m_keyPressed) m_keyPressed = sf::Keyboard::Unknown;
+
 			bool noKeyPressed = true;
 			const float SPEED = 80.0f;
-			if (sf::Keyboard::isKeyPressed(sf::Keyboard::A) || sf::Keyboard::isKeyPressed(sf::Keyboard::Left))
+
+			if (isMovingLeft && (m_keyPressed == sf::Keyboard::A || m_keyPressed == sf::Keyboard::Unknown))
 			{
 				anim.currentAnimation = &anim.animations["left"];
 				noKeyPressed = false;
+				m_keyPressed = sf::Keyboard::A;
 			}
-			if (sf::Keyboard::isKeyPressed(sf::Keyboard::W) || sf::Keyboard::isKeyPressed(sf::Keyboard::Up))
+			if (isMovingUp && (m_keyPressed == sf::Keyboard::W || m_keyPressed == sf::Keyboard::Unknown))
 			{
 				anim.currentAnimation = &anim.animations["up"];
 				noKeyPressed = false;
+				m_keyPressed = sf::Keyboard::W;
 			}
-			if (sf::Keyboard::isKeyPressed(sf::Keyboard::S) || sf::Keyboard::isKeyPressed(sf::Keyboard::Down))
+			if (isMovingDown && (m_keyPressed == sf::Keyboard::S || m_keyPressed == sf::Keyboard::Unknown))
 			{
 				anim.currentAnimation = &anim.animations["down"];
 				noKeyPressed = false;
+				m_keyPressed = sf::Keyboard::S;
 			}
-			if (sf::Keyboard::isKeyPressed(sf::Keyboard::D) || sf::Keyboard::isKeyPressed(sf::Keyboard::Right))
+			if (isMovingRight && (m_keyPressed == sf::Keyboard::D || m_keyPressed == sf::Keyboard::Unknown))
 			{
 				anim.currentAnimation = &anim.animations["right"];
 				noKeyPressed = false;
+				m_keyPressed = sf::Keyboard::D;
 			}
 			return MoveData({ 0, 0 }, noKeyPressed, SPEED);
 		};

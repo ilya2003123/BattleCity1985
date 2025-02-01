@@ -30,10 +30,9 @@ void RenderSFML::update(IScene& scene)
 	sf::Event event;
 	while (m_renderWin.pollEvent(event))
 	{
-		if (event.type == sf::Event::Closed)
-		{
-			m_renderWin.close();
-		}
+		if (event.type == sf::Event::Closed) m_renderWin.close();
+		auto time = sf::Time();
+		scene.update(event, time);
 	}
 	sf::Time frameTime = frameClock.restart();
 
