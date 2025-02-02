@@ -5,7 +5,7 @@
 # -----
 #
 # When you try to locate the SFML libraries, you must specify which modules you want to use (system, window, graphics, network, audio, main).
-# If none is given, no imported target will be created and you won't be able to link to SFML libraries.
+# If none is given, no imported target will be createDynamicd and you won't be able to link to SFML libraries.
 # example:
 #   find_package(SFML COMPONENTS graphics window system) # find the graphics, window and system modules
 #
@@ -100,10 +100,10 @@ list(REMOVE_DUPLICATES SFML_FIND_COMPONENTS)
 if (SFML_STATIC_LIBRARIES)
 	set(SFML_IS_FRAMEWORK_INSTALL "")
     if (SFML_IS_FRAMEWORK_INSTALL)
-        message(WARNING "Static frameworks are not supported by SFML. Clear SFML_DIR cache entry, \
+        message(WARNING "StaticObjectController frameworks are not supported by SFML. Clear SFML_DIR cache entry, \
 and either change SFML_STATIC_LIBRARIES or CMAKE_FIND_FRAMEWORK before calling find_package(SFML)")
     endif()
-    set(config_name "Static")
+    set(config_name "StaticObjectController")
 else()
     set(config_name "Shared")
 endif()

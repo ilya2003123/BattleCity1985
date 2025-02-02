@@ -53,14 +53,14 @@ public:
     typedef std::basic_string<Uint32>::const_iterator ConstIterator; ///< Read-only iterator type
 
     ////////////////////////////////////////////////////////////
-    // Static member data
+    // StaticObjectController member data
     ////////////////////////////////////////////////////////////
     static const std::size_t InvalidPos; ///< Represents an invalid position in the string
 
     ////////////////////////////////////////////////////////////
     /// \brief Default constructor
     ///
-    /// This constructor creates an empty string.
+    /// This constructor createDynamics an empty string.
     ///
     ////////////////////////////////////////////////////////////
     String();

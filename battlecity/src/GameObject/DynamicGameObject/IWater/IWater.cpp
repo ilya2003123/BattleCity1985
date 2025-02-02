@@ -1,7 +1,7 @@
 #include "IWater.h"
 
 IWater::IWater(float x, float y)
-	: m_x(x), m_y(y), m_animSprite(resource::dataForWater(), new AnimWaterController())
+	: m_x(x), m_y(y), m_animSprite(dataForDynamicGameObject(), new AnimWaterController())
 {
 	m_animSprite.setPosition(x, y);
 	m_animSprite.setState("flow");
@@ -19,5 +19,5 @@ void IWater::update(sf::Event& event, sf::Time frameTime)
 
 std::map<std::string, Animation> IWater::dataForDynamicGameObject()
 {
-	return resource::create(utils::PATH_TO_WATER, utils::framesWater);
+	return resource::createDynamic(utils::PATH_TO_WATER, utils::framesWater);
 }

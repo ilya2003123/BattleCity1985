@@ -86,7 +86,7 @@ public:
     ////////////////////////////////////////////////////////////
     /// \brief Default constructor
     ///
-    /// This constructor creates an invalid shader.
+    /// This constructor createDynamics an invalid shader.
     ///
     ////////////////////////////////////////////////////////////
     Shader();
@@ -694,10 +694,10 @@ public:
 private:
 
     ////////////////////////////////////////////////////////////
-    /// \brief Compile the shader(s) and create the program
+    /// \brief Compile the shader(s) and createDynamic the program
     ///
     /// If one of the arguments is NULL, the corresponding shader
-    /// is not created.
+    /// is not createDynamicd.
     ///
     /// \param vertexShaderCode   Source code of the vertex shader
     /// \param geometryShaderCode Source code of the geometry shader

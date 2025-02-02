@@ -105,7 +105,7 @@ public:
                  const Texture* theTexture, const Shader* theShader);
 
     ////////////////////////////////////////////////////////////
-    // Static member data
+    // StaticObjectController member data
     ////////////////////////////////////////////////////////////
     static const RenderStates Default; ///< Special instance holding the default render states
 

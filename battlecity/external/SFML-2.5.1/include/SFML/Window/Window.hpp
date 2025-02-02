@@ -62,8 +62,8 @@ public:
     ////////////////////////////////////////////////////////////
     /// \brief Default constructor
     ///
-    /// This constructor doesn't actually create the window,
-    /// use the other constructors or call create() to do so.
+    /// This constructor doesn't actually createDynamic the window,
+    /// use the other constructors or call createDynamic() to do so.
     ///
     ////////////////////////////////////////////////////////////
     Window();
@@ -71,7 +71,7 @@ public:
     ////////////////////////////////////////////////////////////
     /// \brief Construct a new window
     ///
-    /// This constructor creates the window with the size and pixel
+    /// This constructor createDynamics the window with the size and pixel
     /// depth defined in \a mode. An optional style can be passed to
     /// customize the look and behavior of the window (borders,
     /// title bar, resizable, closable, ...). If \a style contains
@@ -92,7 +92,7 @@ public:
     ////////////////////////////////////////////////////////////
     /// \brief Construct the window from an existing control
     ///
-    /// Use this constructor if you want to create an OpenGL
+    /// Use this constructor if you want to createDynamic an OpenGL
     /// rendering area into an already existing control.
     ///
     /// The second parameter is an optional structure specifying
@@ -114,9 +114,9 @@ public:
     virtual ~Window();
 
     ////////////////////////////////////////////////////////////
-    /// \brief Create (or recreate) the window
+    /// \brief Create (or recreateDynamic) the window
     ///
-    /// If the window was already created, it closes it first.
+    /// If the window was already createDynamicd, it closes it first.
     /// If \a style contains Style::Fullscreen, then \a mode
     /// must be a valid video mode.
     ///
@@ -130,14 +130,14 @@ public:
     /// \param settings Additional settings for the underlying OpenGL context
     ///
     ////////////////////////////////////////////////////////////
-    void create(VideoMode mode, const String& title, Uint32 style = Style::Default, const ContextSettings& settings = ContextSettings());
+    void createDynamic(VideoMode mode, const String& title, Uint32 style = Style::Default, const ContextSettings& settings = ContextSettings());
 
     ////////////////////////////////////////////////////////////
-    /// \brief Create (or recreate) the window from an existing control
+    /// \brief Create (or recreateDynamic) the window from an existing control
     ///
-    /// Use this function if you want to create an OpenGL
+    /// Use this function if you want to createDynamic an OpenGL
     /// rendering area into an already existing control.
-    /// If the window was already created, it closes it first.
+    /// If the window was already createDynamicd, it closes it first.
     ///
     /// The second parameter is an optional structure specifying
     /// advanced OpenGL context settings such as antialiasing,
@@ -147,13 +147,13 @@ public:
     /// \param settings Additional settings for the underlying OpenGL context
     ///
     ////////////////////////////////////////////////////////////
-    void create(WindowHandle handle, const ContextSettings& settings = ContextSettings());
+    void createDynamic(WindowHandle handle, const ContextSettings& settings = ContextSettings());
 
     ////////////////////////////////////////////////////////////
     /// \brief Close the window and destroy all the attached resources
     ///
     /// After calling this function, the sf::Window instance remains
-    /// valid and you can call create() to recreate the window.
+    /// valid and you can call createDynamic() to recreateDynamic the window.
     /// All other functions such as pollEvent() or display() will
     /// still work (i.e. you don't have to test isOpen() every time),
     /// and will have no effect on closed windows.
@@ -177,7 +177,7 @@ public:
     /// \brief Get the settings of the OpenGL context of the window
     ///
     /// Note that these settings may be different from what was
-    /// passed to the constructor or the create() function,
+    /// passed to the constructor or the createDynamic() function,
     /// if one or more settings were not supported. In this case,
     /// SFML chose the closest match.
     ///
@@ -252,7 +252,7 @@ public:
     /// \brief Change the position of the window on screen
     ///
     /// This function only works for top-level windows
-    /// (i.e. it will be ignored for windows created from
+    /// (i.e. it will be ignored for windows createDynamicd from
     /// the handle of a child window/control).
     ///
     /// \param position New position, in pixels
@@ -499,11 +499,11 @@ public:
 protected:
 
     ////////////////////////////////////////////////////////////
-    /// \brief Function called after the window has been created
+    /// \brief Function called after the window has been createDynamicd
     ///
     /// This function is called so that derived classes can
     /// perform their own specific initialization as soon as
-    /// the window is created.
+    /// the window is createDynamicd.
     ///
     ////////////////////////////////////////////////////////////
     virtual void onCreate();
@@ -562,12 +562,12 @@ private:
 /// sf::Window is the main class of the Window module. It defines
 /// an OS window that is able to receive an OpenGL rendering.
 ///
-/// A sf::Window can create its own new window, or be embedded into
-/// an already existing control using the create(handle) function.
+/// A sf::Window can createDynamic its own new window, or be embedded into
+/// an already existing control using the createDynamic(handle) function.
 /// This can be useful for embedding an OpenGL rendering area into
 /// a view which is part of a bigger GUI with existing windows,
 /// controls, etc. It can also serve as embedding an OpenGL rendering
-/// area into a window created by another (probably richer) GUI library
+/// area into a window createDynamicd by another (probably richer) GUI library
 /// like Qt or wxWidgets.
 ///
 /// The sf::Window class provides a simple interface for manipulating
@@ -591,7 +591,7 @@ private:
 ///
 /// Usage example:
 /// \code
-/// // Declare and create a new window
+/// // Declare and createDynamic a new window
 /// sf::Window window(sf::VideoMode(800, 600), "SFML window");
 ///
 /// // Limit the framerate to 60 frames per second (this step is optional)

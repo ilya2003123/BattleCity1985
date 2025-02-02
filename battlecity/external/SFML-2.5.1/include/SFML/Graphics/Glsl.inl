@@ -92,7 +92,7 @@ template <typename T>
 struct Vector4
 {
     ////////////////////////////////////////////////////////////
-    /// \brief Default constructor, creates a zero vector
+    /// \brief Default constructor, createDynamics a zero vector
     ///
     ////////////////////////////////////////////////////////////
     Vector4() :

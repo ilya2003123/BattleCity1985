@@ -2,6 +2,7 @@
 
 #include "IAnimController.h"
 #include <functional>
+#include "../GameObject/DynamicGameObject/IWater/IWater.h"
 
 class AnimWaterController : public IAnimController
 {

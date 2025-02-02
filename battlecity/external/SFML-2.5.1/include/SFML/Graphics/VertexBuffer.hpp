@@ -53,7 +53,7 @@ public:
     /// If data is going to be updated once or more every frame,
     /// set the usage to Stream. If data is going to be set once
     /// and used for a long time without being modified, set the
-    /// usage to Static. For everything else Dynamic should be a
+    /// usage to StaticObjectController. For everything else Dynamic should be a
     /// good compromise.
     ///
     ////////////////////////////////////////////////////////////
@@ -61,7 +61,7 @@ public:
     {
         Stream,  ///< Constantly changing data
         Dynamic, ///< Occasionally changing data
-        Static   ///< Rarely changing data
+        StaticObjectController   ///< Rarely changing data
     };
 
     ////////////////////////////////////////////////////////////
@@ -126,7 +126,7 @@ public:
     /// allocated memory is freed in the process.
     ///
     /// In order to deallocate previously allocated memory pass 0
-    /// as \p vertexCount. Don't forget to recreate with a non-zero
+    /// as \p vertexCount. Don't forget to recreateDynamic with a non-zero
     /// value when graphics memory should be allocated again.
     ///
     /// \param vertexCount Number of vertices worth of memory to allocate
@@ -134,7 +134,7 @@ public:
     /// \return True if creation was successful
     ///
     ////////////////////////////////////////////////////////////
-    bool create(std::size_t vertexCount);
+    bool createDynamic(std::size_t vertexCount);
 
     ////////////////////////////////////////////////////////////
     /// \brief Return the vertex count
@@ -148,14 +148,14 @@ public:
     /// \brief Update the whole buffer from an array of vertices
     ///
     /// The \a vertex array is assumed to have the same size as
-    /// the \a created buffer.
+    /// the \a createDynamicd buffer.
     ///
     /// No additional check is performed on the size of the vertex
     /// array, passing invalid arguments will lead to undefined
     /// behavior.
     ///
     /// This function does nothing if \a vertices is null or if the
-    /// buffer was not previously created.
+    /// buffer was not previously createDynamicd.
     ///
     /// \param vertices Array of vertices to copy to the buffer
     ///
@@ -171,18 +171,18 @@ public:
     /// from the beginning of the buffer.
     ///
     /// If \p offset is 0 and \p vertexCount is equal to the size of
-    /// the currently created buffer, its whole contents are replaced.
+    /// the currently createDynamicd buffer, its whole contents are replaced.
     ///
     /// If \p offset is 0 and \p vertexCount is greater than the
-    /// size of the currently created buffer, a new buffer is created
+    /// size of the currently createDynamicd buffer, a new buffer is createDynamicd
     /// containing the vertex data.
     ///
     /// If \p offset is 0 and \p vertexCount is less than the size of
-    /// the currently created buffer, only the corresponding region
+    /// the currently createDynamicd buffer, only the corresponding region
     /// is updated.
     ///
     /// If \p offset is not 0 and \p offset + \p vertexCount is greater
-    /// than the size of the currently created buffer, the update fails.
+    /// than the size of the currently createDynamicd buffer, the update fails.
     ///
     /// No additional check is performed on the size of the vertex
     /// array, passing invalid arguments will lead to undefined
@@ -232,7 +232,7 @@ public:
     /// very specific stuff to implement that SFML doesn't support,
     /// or implement a temporary workaround until a bug is fixed.
     ///
-    /// \return OpenGL handle of the vertex buffer or 0 if not yet created
+    /// \return OpenGL handle of the vertex buffer or 0 if not yet createDynamicd
     ///
     ////////////////////////////////////////////////////////////
     unsigned int getNativeHandle() const;
@@ -397,7 +397,7 @@ private:
 /// sf::Vertex vertices[15];
 /// ...
 /// sf::VertexBuffer triangles(sf::Triangles);
-/// triangles.create(15);
+/// triangles.createDynamic(15);
 /// triangles.update(vertices);
 /// ...
 /// window.draw(triangles);

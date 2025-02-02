@@ -26,6 +26,16 @@ namespace utils
 		}
 	};
 
+	const std::map<std::string, std::vector<std::tuple<int, bool, int, int>>> frameStatic =
+	{
+		{
+			"static",
+			{
+				{0, 0, -1, -1}
+			}
+		}
+	};
+
 	const std::map<std::string, std::vector<std::tuple<int, bool, int, int>>> framesTank =
 	{
 		{

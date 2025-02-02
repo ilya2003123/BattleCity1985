@@ -102,7 +102,7 @@ private:
 /// This class makes its instances non-copyable, by explicitly
 /// disabling its copy constructor and its assignment operator.
 ///
-/// To create a non-copyable class, simply inherit from
+/// To createDynamic a non-copyable class, simply inherit from
 /// sf::NonCopyable.
 ///
 /// The type of inheritance (public or private) doesn't matter,

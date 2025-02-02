@@ -92,10 +92,10 @@ public:
     ///
     /// \return A new sound file reader that can read the given file, or null if no reader can handle it
     ///
-    /// \see createReaderFromMemory, createReaderFromStream
+    /// \see createDynamicReaderFromMemory, createDynamicReaderFromStream
     ///
     ////////////////////////////////////////////////////////////
-    static SoundFileReader* createReaderFromFilename(const std::string& filename);
+    static SoundFileReader* createDynamicReaderFromFilename(const std::string& filename);
 
     ////////////////////////////////////////////////////////////
     /// \brief Instantiate the right codec for the given file in memory
@@ -107,10 +107,10 @@ public:
     ///
     /// \return A new sound file codec that can read the given file, or null if no codec can handle it
     ///
-    /// \see createReaderFromFilename, createReaderFromStream
+    /// \see createDynamicReaderFromFilename, createDynamicReaderFromStream
     ///
     ////////////////////////////////////////////////////////////
-    static SoundFileReader* createReaderFromMemory(const void* data, std::size_t sizeInBytes);
+    static SoundFileReader* createDynamicReaderFromMemory(const void* data, std::size_t sizeInBytes);
 
     ////////////////////////////////////////////////////////////
     /// \brief Instantiate the right codec for the given file in stream
@@ -121,10 +121,10 @@ public:
     ///
     /// \return A new sound file codec that can read the given file, or null if no codec can handle it
     ///
-    /// \see createReaderFromFilename, createReaderFromMemory
+    /// \see createDynamicReaderFromFilename, createDynamicReaderFromMemory
     ///
     ////////////////////////////////////////////////////////////
-    static SoundFileReader* createReaderFromStream(InputStream& stream);
+    static SoundFileReader* createDynamicReaderFromStream(InputStream& stream);
 
     ////////////////////////////////////////////////////////////
     /// \brief Instantiate the right writer for the given file on disk
@@ -136,7 +136,7 @@ public:
     /// \return A new sound file writer that can write given file, or null if no writer can handle it
     ///
     ////////////////////////////////////////////////////////////
-    static SoundFileWriter* createWriterFromFilename(const std::string& filename);
+    static SoundFileWriter* createDynamicWriterFromFilename(const std::string& filename);
 
 private:
 
@@ -146,19 +146,19 @@ private:
     struct ReaderFactory
     {
         bool (*check)(InputStream&);
-        SoundFileReader* (*create)();
+        SoundFileReader* (*createDynamic)();
     };
     typedef std::vector<ReaderFactory> ReaderFactoryArray;
 
     struct WriterFactory
     {
         bool (*check)(const std::string&);
-        SoundFileWriter* (*create)();
+        SoundFileWriter* (*createDynamic)();
     };
     typedef std::vector<WriterFactory> WriterFactoryArray;
 
     ////////////////////////////////////////////////////////////
-    // Static member data
+    // StaticObjectController member data
     ////////////////////////////////////////////////////////////
     static ReaderFactoryArray s_readers; ///< List of all registered readers
     static WriterFactoryArray s_writers; ///< List of all registered writers

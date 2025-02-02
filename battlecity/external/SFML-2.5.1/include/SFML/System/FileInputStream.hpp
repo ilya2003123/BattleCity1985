@@ -153,7 +153,7 @@ private:
 ///
 /// SFML resource classes can usually be loaded directly from
 /// a filename, so this class shouldn't be useful to you unless
-/// you create your own algorithms that operate on an InputStream.
+/// you createDynamic your own algorithms that operate on an InputStream.
 ///
 /// Usage example:
 /// \code

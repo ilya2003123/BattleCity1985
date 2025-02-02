@@ -43,8 +43,8 @@
 <div class="header">
   <div class="summary">
 <a href="#pub-methods">Public Member Functions</a> &#124;
-<a href="#pub-static-methods">Static Public Member Functions</a> &#124;
-<a href="#pri-static-methods">Static Private Member Functions</a> &#124;
+<a href="#pub-static-methods">StaticObjectController Public Member Functions</a> &#124;
+<a href="#pri-static-methods">StaticObjectController Private Member Functions</a> &#124;
 <a href="classsf_1_1Context-members.html">List of all members</a>  </div>
   <div class="headertitle">
 <div class="title">sf::Context Class Reference<div class="ingroups"><a class="el" href="group__window.html">Window module</a></div></div>  </div>
@@ -85,7 +85,7 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:a2a9e3529e48919120e6b6fc10bad296c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-static-methods"></a>
-Static Public Member Functions</h2></td></tr>
+StaticObjectController Public Member Functions</h2></td></tr>
 <tr class="memitem:a163c7f72c0c20133606657d895faa147"><td class="memItemLeft" align="right" valign="top">static bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsf_1_1Context.html#a163c7f72c0c20133606657d895faa147">isExtensionAvailable</a> (const char *name)</td></tr>
 <tr class="memdesc:a163c7f72c0c20133606657d895faa147"><td class="mdescLeft">&#160;</td><td class="mdescRight">Check whether a given OpenGL extension is available.  <a href="#a163c7f72c0c20133606657d895faa147">More...</a><br /></td></tr>
 <tr class="separator:a163c7f72c0c20133606657d895faa147"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -100,7 +100,7 @@ Static Public Member Functions</h2></td></tr>
 <tr class="separator:a61b1cb0a99b8e3ce56579d70aa41fb70"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-static-methods"></a>
-Static Private Member Functions</h2></td></tr>
+StaticObjectController Private Member Functions</h2></td></tr>
 <tr class="memitem:ab171bdaf5eb36789da14b30a846db471"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsf_1_1GlResource.html#ab171bdaf5eb36789da14b30a846db471">registerContextDestroyCallback</a> (ContextDestroyCallback callback, void *arg)</td></tr>
 <tr class="memdesc:ab171bdaf5eb36789da14b30a846db471"><td class="mdescLeft">&#160;</td><td class="mdescRight">Register a function to be called when a context is destroyed.  <a href="#ab171bdaf5eb36789da14b30a846db471">More...</a><br /></td></tr>
 <tr class="separator:ab171bdaf5eb36789da14b30a846db471"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -109,7 +109,7 @@ Static Private Member Functions</h2></td></tr>
 <div class="textblock"><p>Class holding a valid drawing context. </p>
 <p>If you need to make OpenGL calls without having an active window (like in a thread), you can use an instance of this class to get a valid context.</p>
 <p>Having a valid context is necessary for <em>every</em> OpenGL call.</p>
-<p>Note that a context is only active in its current thread, if you create a new thread it will have no valid context by default.</p>
+<p>Note that a context is only active in its current thread, if you createDynamic a new thread it will have no valid context by default.</p>
 <p>To use a <a class="el" href="classsf_1_1Context.html" title="Class holding a valid drawing context. ">sf::Context</a> instance, just construct it and let it live as long as you need a valid context. No explicit activation is needed, all it has to do is to exist. Its destructor will take care of deactivating and freeing all the attached resources.</p>
 <p>Usage example: </p><div class="fragment"><div class="line"><span class="keywordtype">void</span> threadFunction(<span class="keywordtype">void</span>*)</div><div class="line">{</div><div class="line">   <a class="code" href="classsf_1_1Context.html">sf::Context</a> context;</div><div class="line">   <span class="comment">// from now on, you have a valid context</span></div><div class="line"></div><div class="line">   <span class="comment">// you can make OpenGL calls</span></div><div class="line">   glClear(GL_DEPTH_BUFFER_BIT);</div><div class="line">}</div><div class="line"><span class="comment">// the context is automatically deactivated and destroyed</span></div><div class="line"><span class="comment">// by the sf::Context destructor</span></div></div><!-- fragment --> 
 <p class="definition">Definition at line <a class="el" href="Context_8hpp_source.html#l00050">50</a> of file <a class="el" href="Context_8hpp_source.html">Context.hpp</a>.</p>
@@ -130,7 +130,7 @@ Static Private Member Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Default constructor. </p>
-<p>The constructor creates and activates the context </p>
+<p>The constructor createDynamics and activates the context </p>
 
 </div>
 </div>
@@ -224,7 +224,7 @@ Static Private Member Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Get the currently active context. </p>
-<p>This function will only return <a class="el" href="classsf_1_1Context.html" title="Class holding a valid drawing context. ">sf::Context</a> objects. Contexts created e.g. by RenderTargets or for internal use will not be returned by this function.</p>
+<p>This function will only return <a class="el" href="classsf_1_1Context.html" title="Class holding a valid drawing context. ">sf::Context</a> objects. Contexts createDynamicd e.g. by RenderTargets or for internal use will not be returned by this function.</p>
 <dl class="section return"><dt>Returns</dt><dd>The currently active context or NULL if none is active </dd></dl>
 
 </div>

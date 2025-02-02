@@ -131,7 +131,7 @@ protected:
     /// \brief Return the internal handle of the socket
     ///
     /// The returned handle may be invalid if the socket
-    /// was not created yet (or already destroyed).
+    /// was not createDynamicd yet (or already destroyed).
     /// This function can only be accessed by derived classes.
     ///
     /// \return The internal (OS-specific) handle of the socket
@@ -145,7 +145,7 @@ protected:
     /// This function can only be accessed by derived classes.
     ///
     ////////////////////////////////////////////////////////////
-    void create();
+    void createDynamic();
 
     ////////////////////////////////////////////////////////////
     /// \brief Create the internal representation of the socket
@@ -156,7 +156,7 @@ protected:
     /// \param handle OS-specific handle of the socket to wrap
     ///
     ////////////////////////////////////////////////////////////
-    void create(SocketHandle handle);
+    void createDynamic(SocketHandle handle);
 
     ////////////////////////////////////////////////////////////
     /// \brief Close the socket gracefully

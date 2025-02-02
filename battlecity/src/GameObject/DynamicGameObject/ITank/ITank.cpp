@@ -1,7 +1,7 @@
 #include "ITank.h"
 
 ITank::ITank(float x, float y)
-	: m_x(x), m_y(y), m_animSprite(resource::dataForYellowTank(), new AnimTankController())
+	: m_x(x), m_y(y), m_animSprite(dataForDynamicGameObject(), new AnimTankController())
 {
 	m_animSprite.setPosition(x, y);
 	m_animSprite.setState("up");
@@ -9,7 +9,7 @@ ITank::ITank(float x, float y)
 
 std::map < std::string, Animation> ITank::dataForDynamicGameObject()
 {
-	return resource::create(utils::PATH_TO_YELLOW_TANK_1, utils::framesTank);
+	return resource::createDynamic(utils::PATH_TO_YELLOW_TANK_1, utils::framesTank);
 }
 
 void ITank::draw(sf::RenderTarget& target, sf::RenderStates states) const

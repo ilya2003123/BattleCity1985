@@ -62,10 +62,10 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a0ba22a38e6c96e3b37dd88198046de83"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsf_1_1Image.html#a0ba22a38e6c96e3b37dd88198046de83">~Image</a> ()</td></tr>
 <tr class="memdesc:a0ba22a38e6c96e3b37dd88198046de83"><td class="mdescLeft">&#160;</td><td class="mdescRight">Destructor.  <a href="#a0ba22a38e6c96e3b37dd88198046de83">More...</a><br /></td></tr>
 <tr class="separator:a0ba22a38e6c96e3b37dd88198046de83"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a2a67930e2fd9ad97cf004e918cf5832b"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsf_1_1Image.html#a2a67930e2fd9ad97cf004e918cf5832b">create</a> (unsigned int width, unsigned int height, const <a class="el" href="classsf_1_1Color.html">Color</a> &amp;color=<a class="el" href="classsf_1_1Color.html">Color</a>(0, 0, 0))</td></tr>
+<tr class="memitem:a2a67930e2fd9ad97cf004e918cf5832b"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsf_1_1Image.html#a2a67930e2fd9ad97cf004e918cf5832b">createDynamic</a> (unsigned int width, unsigned int height, const <a class="el" href="classsf_1_1Color.html">Color</a> &amp;color=<a class="el" href="classsf_1_1Color.html">Color</a>(0, 0, 0))</td></tr>
 <tr class="memdesc:a2a67930e2fd9ad97cf004e918cf5832b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Create the image and fill it with a unique color.  <a href="#a2a67930e2fd9ad97cf004e918cf5832b">More...</a><br /></td></tr>
 <tr class="separator:a2a67930e2fd9ad97cf004e918cf5832b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a1c2b960ea12bdbb29e80934ce5268ebf"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsf_1_1Image.html#a1c2b960ea12bdbb29e80934ce5268ebf">create</a> (unsigned int width, unsigned int height, const Uint8 *pixels)</td></tr>
+<tr class="memitem:a1c2b960ea12bdbb29e80934ce5268ebf"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsf_1_1Image.html#a1c2b960ea12bdbb29e80934ce5268ebf">createDynamic</a> (unsigned int width, unsigned int height, const Uint8 *pixels)</td></tr>
 <tr class="memdesc:a1c2b960ea12bdbb29e80934ce5268ebf"><td class="mdescLeft">&#160;</td><td class="mdescRight">Create the image from an array of pixels.  <a href="#a1c2b960ea12bdbb29e80934ce5268ebf">More...</a><br /></td></tr>
 <tr class="separator:a1c2b960ea12bdbb29e80934ce5268ebf"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a9e4f2aa8e36d0cabde5ed5a4ef80290b"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsf_1_1Image.html#a9e4f2aa8e36d0cabde5ed5a4ef80290b">loadFromFile</a> (const std::string &amp;filename)</td></tr>
@@ -83,7 +83,7 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a85409951b05369813069ed64393391ce"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classsf_1_1Vector2.html">Vector2u</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsf_1_1Image.html#a85409951b05369813069ed64393391ce">getSize</a> () const</td></tr>
 <tr class="memdesc:a85409951b05369813069ed64393391ce"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return the size (width and height) of the image.  <a href="#a85409951b05369813069ed64393391ce">More...</a><br /></td></tr>
 <tr class="separator:a85409951b05369813069ed64393391ce"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a22f13f8c242a6b38eb73cc176b37ae34"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsf_1_1Image.html#a22f13f8c242a6b38eb73cc176b37ae34">createMaskFromColor</a> (const <a class="el" href="classsf_1_1Color.html">Color</a> &amp;color, Uint8 alpha=0)</td></tr>
+<tr class="memitem:a22f13f8c242a6b38eb73cc176b37ae34"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsf_1_1Image.html#a22f13f8c242a6b38eb73cc176b37ae34">createDynamicMaskFromColor</a> (const <a class="el" href="classsf_1_1Color.html">Color</a> &amp;color, Uint8 alpha=0)</td></tr>
 <tr class="memdesc:a22f13f8c242a6b38eb73cc176b37ae34"><td class="mdescLeft">&#160;</td><td class="mdescRight">Create a transparency mask from a specified color-key.  <a href="#a22f13f8c242a6b38eb73cc176b37ae34">More...</a><br /></td></tr>
 <tr class="separator:a22f13f8c242a6b38eb73cc176b37ae34"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab2fa337c956f85f93377dcb52153a45a"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsf_1_1Image.html#ab2fa337c956f85f93377dcb52153a45a">copy</a> (const <a class="el" href="classsf_1_1Image.html">Image</a> &amp;source, unsigned int destX, unsigned int destY, const <a class="el" href="classsf_1_1Rect.html">IntRect</a> &amp;sourceRect=<a class="el" href="classsf_1_1Rect.html">IntRect</a>(0, 0, 0, 0), bool applyAlpha=false)</td></tr>
@@ -111,7 +111,7 @@ Public Member Functions</h2></td></tr>
 <p>The class provides functions to load, read, write and save pixels, as well as many other useful functions.</p>
 <p><a class="el" href="classsf_1_1Image.html" title="Class for loading, manipulating and saving images. ">sf::Image</a> can handle a unique internal representation of pixels, which is RGBA 32 bits. This means that a pixel must be composed of 8 bits red, green, blue and alpha channels &ndash; just like a <a class="el" href="classsf_1_1Color.html" title="Utility class for manipulating RGBA colors. ">sf::Color</a>. All the functions that return an array of pixels follow this rule, and all parameters that you pass to <a class="el" href="classsf_1_1Image.html" title="Class for loading, manipulating and saving images. ">sf::Image</a> functions (such as loadFromMemory) must use this representation as well.</p>
 <p>A <a class="el" href="classsf_1_1Image.html" title="Class for loading, manipulating and saving images. ">sf::Image</a> can be copied, but it is a heavy resource and if possible you should always use [const] references to pass or return them to avoid useless copies.</p>
-<p>Usage example: </p><div class="fragment"><div class="line"><span class="comment">// Load an image file from a file</span></div><div class="line"><a class="code" href="classsf_1_1Image.html">sf::Image</a> background;</div><div class="line"><span class="keywordflow">if</span> (!background.<a class="code" href="classsf_1_1Image.html#a9e4f2aa8e36d0cabde5ed5a4ef80290b">loadFromFile</a>(<span class="stringliteral">&quot;background.jpg&quot;</span>))</div><div class="line">    <span class="keywordflow">return</span> -1;</div><div class="line"></div><div class="line"><span class="comment">// Create a 20x20 image filled with black color</span></div><div class="line"><a class="code" href="classsf_1_1Image.html">sf::Image</a> image;</div><div class="line">image.<a class="code" href="classsf_1_1Image.html#a2a67930e2fd9ad97cf004e918cf5832b">create</a>(20, 20, <a class="code" href="classsf_1_1Color.html#a77c688197b981338f0b19dc58bd2facd">sf::Color::Black</a>);</div><div class="line"></div><div class="line"><span class="comment">// Copy image1 on image2 at position (10, 10)</span></div><div class="line">image.<a class="code" href="classsf_1_1Image.html#ab2fa337c956f85f93377dcb52153a45a">copy</a>(background, 10, 10);</div><div class="line"></div><div class="line"><span class="comment">// Make the top-left pixel transparent</span></div><div class="line"><a class="code" href="classsf_1_1Color.html">sf::Color</a> color = image.<a class="code" href="classsf_1_1Image.html#acf278760458433b2c3626a6980388a95">getPixel</a>(0, 0);</div><div class="line">color.<a class="code" href="classsf_1_1Color.html#a56dbdb47d5f040d9b78ac6a0b8b3a831">a</a> = 0;</div><div class="line">image.<a class="code" href="classsf_1_1Image.html#a9fd329b8cd7d4439e07fb5d3bb2d9744">setPixel</a>(0, 0, color);</div><div class="line"></div><div class="line"><span class="comment">// Save the image to a file</span></div><div class="line"><span class="keywordflow">if</span> (!image.<a class="code" href="classsf_1_1Image.html#a51537fb667f47cbe80395cfd7f9e72a4">saveToFile</a>(<span class="stringliteral">&quot;result.png&quot;</span>))</div><div class="line">    <span class="keywordflow">return</span> -1;</div></div><!-- fragment --><dl class="section see"><dt>See also</dt><dd><a class="el" href="classsf_1_1Texture.html" title="Image living on the graphics card that can be used for drawing. ">sf::Texture</a> </dd></dl>
+<p>Usage example: </p><div class="fragment"><div class="line"><span class="comment">// Load an image file from a file</span></div><div class="line"><a class="code" href="classsf_1_1Image.html">sf::Image</a> background;</div><div class="line"><span class="keywordflow">if</span> (!background.<a class="code" href="classsf_1_1Image.html#a9e4f2aa8e36d0cabde5ed5a4ef80290b">loadFromFile</a>(<span class="stringliteral">&quot;background.jpg&quot;</span>))</div><div class="line">    <span class="keywordflow">return</span> -1;</div><div class="line"></div><div class="line"><span class="comment">// Create a 20x20 image filled with black color</span></div><div class="line"><a class="code" href="classsf_1_1Image.html">sf::Image</a> image;</div><div class="line">image.<a class="code" href="classsf_1_1Image.html#a2a67930e2fd9ad97cf004e918cf5832b">createDynamic</a>(20, 20, <a class="code" href="classsf_1_1Color.html#a77c688197b981338f0b19dc58bd2facd">sf::Color::Black</a>);</div><div class="line"></div><div class="line"><span class="comment">// Copy image1 on image2 at position (10, 10)</span></div><div class="line">image.<a class="code" href="classsf_1_1Image.html#ab2fa337c956f85f93377dcb52153a45a">copy</a>(background, 10, 10);</div><div class="line"></div><div class="line"><span class="comment">// Make the top-left pixel transparent</span></div><div class="line"><a class="code" href="classsf_1_1Color.html">sf::Color</a> color = image.<a class="code" href="classsf_1_1Image.html#acf278760458433b2c3626a6980388a95">getPixel</a>(0, 0);</div><div class="line">color.<a class="code" href="classsf_1_1Color.html#a56dbdb47d5f040d9b78ac6a0b8b3a831">a</a> = 0;</div><div class="line">image.<a class="code" href="classsf_1_1Image.html#a9fd329b8cd7d4439e07fb5d3bb2d9744">setPixel</a>(0, 0, color);</div><div class="line"></div><div class="line"><span class="comment">// Save the image to a file</span></div><div class="line"><span class="keywordflow">if</span> (!image.<a class="code" href="classsf_1_1Image.html#a51537fb667f47cbe80395cfd7f9e72a4">saveToFile</a>(<span class="stringliteral">&quot;result.png&quot;</span>))</div><div class="line">    <span class="keywordflow">return</span> -1;</div></div><!-- fragment --><dl class="section see"><dt>See also</dt><dd><a class="el" href="classsf_1_1Texture.html" title="Image living on the graphics card that can be used for drawing. ">sf::Texture</a> </dd></dl>
 
 <p class="definition">Definition at line <a class="el" href="Image_8hpp_source.html#l00046">46</a> of file <a class="el" href="Image_8hpp_source.html">Image.hpp</a>.</p>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
@@ -216,13 +216,13 @@ Public Member Functions</h2></td></tr>
 </div>
 </div>
 <a id="a2a67930e2fd9ad97cf004e918cf5832b"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a2a67930e2fd9ad97cf004e918cf5832b">&#9670;&nbsp;</a></span>create() <span class="overload">[1/2]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a2a67930e2fd9ad97cf004e918cf5832b">&#9670;&nbsp;</a></span>createDynamic() <span class="overload">[1/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">void sf::Image::create </td>
+          <td class="memname">void sf::Image::createDynamic </td>
           <td>(</td>
           <td class="paramtype">unsigned int&#160;</td>
           <td class="paramname"><em>width</em>, </td>
@@ -260,13 +260,13 @@ Public Member Functions</h2></td></tr>
 </div>
 </div>
 <a id="a1c2b960ea12bdbb29e80934ce5268ebf"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a1c2b960ea12bdbb29e80934ce5268ebf">&#9670;&nbsp;</a></span>create() <span class="overload">[2/2]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a1c2b960ea12bdbb29e80934ce5268ebf">&#9670;&nbsp;</a></span>createDynamic() <span class="overload">[2/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">void sf::Image::create </td>
+          <td class="memname">void sf::Image::createDynamic </td>
           <td>(</td>
           <td class="paramtype">unsigned int&#160;</td>
           <td class="paramname"><em>width</em>, </td>
@@ -292,7 +292,7 @@ Public Member Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Create the image from an array of pixels. </p>
-<p>The <em>pixel</em> array is assumed to contain 32-bits RGBA pixels, and have the given <em>width</em> and <em>height</em>. If not, this is an undefined behavior. If <em>pixels</em> is null, an empty image is created.</p>
+<p>The <em>pixel</em> array is assumed to contain 32-bits RGBA pixels, and have the given <em>width</em> and <em>height</em>. If not, this is an undefined behavior. If <em>pixels</em> is null, an empty image is createDynamicd.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">width</td><td>Width of the image </td></tr>
@@ -305,13 +305,13 @@ Public Member Functions</h2></td></tr>
 </div>
 </div>
 <a id="a22f13f8c242a6b38eb73cc176b37ae34"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a22f13f8c242a6b38eb73cc176b37ae34">&#9670;&nbsp;</a></span>createMaskFromColor()</h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a22f13f8c242a6b38eb73cc176b37ae34">&#9670;&nbsp;</a></span>createDynamicMaskFromColor()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">void sf::Image::createMaskFromColor </td>
+          <td class="memname">void sf::Image::createDynamicMaskFromColor </td>
           <td>(</td>
           <td class="paramtype">const <a class="el" href="classsf_1_1Color.html">Color</a> &amp;&#160;</td>
           <td class="paramname"><em>color</em>, </td>
@@ -584,7 +584,7 @@ Public Member Functions</h2></td></tr>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>True if saving was successful</dd></dl>
-<dl class="section see"><dt>See also</dt><dd><a class="el" href="classsf_1_1Image.html#a2a67930e2fd9ad97cf004e918cf5832b" title="Create the image and fill it with a unique color. ">create</a>, <a class="el" href="classsf_1_1Image.html#a9e4f2aa8e36d0cabde5ed5a4ef80290b" title="Load the image from a file on disk. ">loadFromFile</a>, <a class="el" href="classsf_1_1Image.html#aaa6c7afa5851a51cec6ab438faa7354c" title="Load the image from a file in memory. ">loadFromMemory</a> </dd></dl>
+<dl class="section see"><dt>See also</dt><dd><a class="el" href="classsf_1_1Image.html#a2a67930e2fd9ad97cf004e918cf5832b" title="Create the image and fill it with a unique color. ">createDynamic</a>, <a class="el" href="classsf_1_1Image.html#a9e4f2aa8e36d0cabde5ed5a4ef80290b" title="Load the image from a file on disk. ">loadFromFile</a>, <a class="el" href="classsf_1_1Image.html#aaa6c7afa5851a51cec6ab438faa7354c" title="Load the image from a file in memory. ">loadFromMemory</a> </dd></dl>
 
 </div>
 </div>

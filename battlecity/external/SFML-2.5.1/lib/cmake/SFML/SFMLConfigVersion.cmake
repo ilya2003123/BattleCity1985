@@ -1,8 +1,8 @@
 # This is a basic version file for the Config-mode of find_package().
 # It is used by write_basic_package_version_file() as input file for configure_file()
-# to create a version-file which can be installed along a config.cmake file.
+# to createDynamic a version-file which can be installed along a config.cmake file.
 #
-# The created file sets PACKAGE_VERSION_EXACT if the current version string and
+# The createDynamicd file sets PACKAGE_VERSION_EXACT if the current version string and
 # the requested version string are exactly the same and it sets
 # PACKAGE_VERSION_COMPATIBLE if the current version is >= requested version,
 # but only if the requested major version is the same as the current one.

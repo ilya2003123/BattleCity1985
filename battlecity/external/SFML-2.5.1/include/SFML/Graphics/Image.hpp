@@ -69,7 +69,7 @@ public:
     /// \param color  Fill color
     ///
     ////////////////////////////////////////////////////////////
-    void create(unsigned int width, unsigned int height, const Color& color = Color(0, 0, 0));
+    void createDynamic(unsigned int width, unsigned int height, const Color& color = Color(0, 0, 0));
 
     ////////////////////////////////////////////////////////////
     /// \brief Create the image from an array of pixels
@@ -77,14 +77,14 @@ public:
     /// The \a pixel array is assumed to contain 32-bits RGBA pixels,
     /// and have the given \a width and \a height. If not, this is
     /// an undefined behavior.
-    /// If \a pixels is null, an empty image is created.
+    /// If \a pixels is null, an empty image is createDynamicd.
     ///
     /// \param width  Width of the image
     /// \param height Height of the image
     /// \param pixels Array of pixels to copy to the image
     ///
     ////////////////////////////////////////////////////////////
-    void create(unsigned int width, unsigned int height, const Uint8* pixels);
+    void createDynamic(unsigned int width, unsigned int height, const Uint8* pixels);
 
     ////////////////////////////////////////////////////////////
     /// \brief Load the image from a file on disk
@@ -150,7 +150,7 @@ public:
     ///
     /// \return True if saving was successful
     ///
-    /// \see create, loadFromFile, loadFromMemory
+    /// \see createDynamic, loadFromFile, loadFromMemory
     ///
     ////////////////////////////////////////////////////////////
     bool saveToFile(const std::string& filename) const;
@@ -174,7 +174,7 @@ public:
     /// \param alpha Alpha value to assign to transparent pixels
     ///
     ////////////////////////////////////////////////////////////
-    void createMaskFromColor(const Color& color, Uint8 alpha = 0);
+    void createDynamicMaskFromColor(const Color& color, Uint8 alpha = 0);
 
     ////////////////////////////////////////////////////////////
     /// \brief Copy pixels from another image onto this one
@@ -304,7 +304,7 @@ private:
 ///
 /// // Create a 20x20 image filled with black color
 /// sf::Image image;
-/// image.create(20, 20, sf::Color::Black);
+/// image.createDynamic(20, 20, sf::Color::Black);
 ///
 /// // Copy image1 on image2 at position (10, 10)
 /// image.copy(background, 10, 10);

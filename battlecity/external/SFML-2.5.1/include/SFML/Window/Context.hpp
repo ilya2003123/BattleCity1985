@@ -54,7 +54,7 @@ public:
     ////////////////////////////////////////////////////////////
     /// \brief Default constructor
     ///
-    /// The constructor creates and activates the context
+    /// The constructor createDynamics and activates the context
     ///
     ////////////////////////////////////////////////////////////
     Context();
@@ -113,7 +113,7 @@ public:
     /// \brief Get the currently active context
     ///
     /// This function will only return sf::Context objects.
-    /// Contexts created e.g. by RenderTargets or for internal
+    /// Contexts createDynamicd e.g. by RenderTargets or for internal
     /// use will not be returned by this function.
     ///
     /// \return The currently active context or NULL if none is active
@@ -169,7 +169,7 @@ private:
 /// Having a valid context is necessary for *every* OpenGL call.
 ///
 /// Note that a context is only active in its current thread,
-/// if you create a new thread it will have no valid context
+/// if you createDynamic a new thread it will have no valid context
 /// by default.
 ///
 /// To use a sf::Context instance, just construct it and let it

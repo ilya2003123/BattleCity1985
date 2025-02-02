@@ -117,7 +117,7 @@
 
 
 ////////////////////////////////////////////////////////////
-// Define helpers to create portable import / export macros for each module
+// Define helpers to createDynamic portable import / export macros for each module
 ////////////////////////////////////////////////////////////
 #if !defined(SFML_STATIC)
 
@@ -155,7 +155,7 @@
 
 #else
 
-    // Static build doesn't need import/export macros
+    // StaticObjectController build doesn't need import/export macros
     #define SFML_API_EXPORT
     #define SFML_API_IMPORT
 

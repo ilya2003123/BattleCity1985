@@ -80,7 +80,7 @@ public:
     Int64 asMicroseconds() const;
 
     ////////////////////////////////////////////////////////////
-    // Static member data
+    // StaticObjectController member data
     ////////////////////////////////////////////////////////////
     static const Time Zero; ///< Predefined "zero" time value
 

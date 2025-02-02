@@ -116,7 +116,7 @@ public:
 /// The vertex is the building block of drawing. Everything which
 /// is visible on screen is made of vertices. They are grouped
 /// as 2D primitives (triangles, quads, ...), and these primitives
-/// are grouped to create even more complex 2D entities such as
+/// are grouped to createDynamic even more complex 2D entities such as
 /// sprites, texts, etc.
 ///
 /// If you use the graphical entities of SFML (sprite, text, shape)

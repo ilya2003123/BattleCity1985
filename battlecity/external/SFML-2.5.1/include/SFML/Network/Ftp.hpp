@@ -95,7 +95,7 @@ public:
             EnteringPassiveMode   = 227, ///< Entering passive mode
             LoggedIn              = 230, ///< User logged in, proceed. Logged out if appropriate
             FileActionOk          = 250, ///< Requested file action ok
-            DirectoryOk           = 257, ///< PATHNAME created
+            DirectoryOk           = 257, ///< PATHNAME createDynamicd
 
             // 3xx: the command has been accepted, but the requested action
             // is dormant, pending receipt of further information
@@ -383,17 +383,17 @@ public:
     ////////////////////////////////////////////////////////////
     /// \brief Create a new directory
     ///
-    /// The new directory is created as a child of the current
+    /// The new directory is createDynamicd as a child of the current
     /// working directory.
     ///
-    /// \param name Name of the directory to create
+    /// \param name Name of the directory to createDynamic
     ///
     /// \return Server response to the request
     ///
     /// \see deleteDirectory
     ///
     ////////////////////////////////////////////////////////////
-    Response createDirectory(const std::string& name);
+    Response createDynamicDirectory(const std::string& name);
 
     ////////////////////////////////////////////////////////////
     /// \brief Remove an existing directory
@@ -407,7 +407,7 @@ public:
     ///
     /// \return Server response to the request
     ///
-    /// \see createDirectory
+    /// \see createDynamicDirectory
     ///
     ////////////////////////////////////////////////////////////
     Response deleteDirectory(const std::string& name);
@@ -550,7 +550,7 @@ private:
 /// sf::Ftp is a very simple FTP client that allows you
 /// to communicate with a FTP server. The FTP protocol allows
 /// you to manipulate a remote file system (list files,
-/// upload, download, create, remove, ...).
+/// upload, download, createDynamic, remove, ...).
 ///
 /// Using the FTP client consists of 4 parts:
 /// \li Connecting to the FTP server
@@ -595,7 +595,7 @@ private:
 ///     std::cout << "Working directory: " << directory.getDirectory() << std::endl;
 ///
 /// // Create a new directory
-/// response = ftp.createDirectory("files");
+/// response = ftp.createDynamicDirectory("files");
 /// if (response.isOk())
 ///     std::cout << "Created new directory" << std::endl;
 ///

@@ -48,7 +48,7 @@ public:
     ////////////////////////////////////////////////////////////
     /// \brief Default constructor
     ///
-    /// This constructor creates an empty (invalid) address
+    /// This constructor createDynamics an empty (invalid) address
     ///
     ////////////////////////////////////////////////////////////
     IpAddress();
@@ -179,7 +179,7 @@ public:
     static IpAddress getPublicAddress(Time timeout = Time::Zero);
 
     ////////////////////////////////////////////////////////////
-    // Static member data
+    // StaticObjectController member data
     ////////////////////////////////////////////////////////////
     static const IpAddress None;      ///< Value representing an empty/invalid address
     static const IpAddress Any;       ///< Value representing any address (0.0.0.0)
@@ -315,9 +315,9 @@ SFML_NETWORK_API std::ostream& operator <<(std::ostream& stream, const IpAddress
 /// sf::IpAddress a2("127.0.0.1");                        // the local host address
 /// sf::IpAddress a3 = sf::IpAddress::Broadcast;          // the broadcast address
 /// sf::IpAddress a4(192, 168, 1, 56);                    // a local address
-/// sf::IpAddress a5("my_computer");                      // a local address created from a network name
+/// sf::IpAddress a5("my_computer");                      // a local address createDynamicd from a network name
 /// sf::IpAddress a6("89.54.1.169");                      // a distant address
-/// sf::IpAddress a7("www.google.com");                   // a distant address created from a network name
+/// sf::IpAddress a7("www.google.com");                   // a distant address createDynamicd from a network name
 /// sf::IpAddress a8 = sf::IpAddress::getLocalAddress();  // my address on the local network
 /// sf::IpAddress a9 = sf::IpAddress::getPublicAddress(); // my address on the internet
 /// \endcode

@@ -95,10 +95,10 @@ public:
     ////////////////////////////////////////////////////////////
     /// \brief Default constructor
     ///
-    /// This constructor doesn't actually create the cursor;
+    /// This constructor doesn't actually createDynamic the cursor;
     /// initially the new instance is invalid and must not be
     /// used until either loadFromPixels() or loadFromSystem()
-    /// is called and successfully created a cursor.
+    /// is called and successfully createDynamicd a cursor.
     ///
     ////////////////////////////////////////////////////////////
     Cursor();
@@ -210,7 +210,7 @@ private:
 /// \code
 /// sf::Window window;
 ///
-/// // ... create window as usual ...
+/// // ... createDynamic window as usual ...
 ///
 /// sf::Cursor cursor;
 /// if (cursor.loadFromSystem(sf::Cursor::Hand))

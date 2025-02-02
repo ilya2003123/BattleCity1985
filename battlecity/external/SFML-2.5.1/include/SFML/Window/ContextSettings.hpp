@@ -76,9 +76,9 @@ struct ContextSettings
     unsigned int depthBits;         ///< Bits of the depth buffer
     unsigned int stencilBits;       ///< Bits of the stencil buffer
     unsigned int antialiasingLevel; ///< Level of antialiasing
-    unsigned int majorVersion;      ///< Major number of the context version to create
-    unsigned int minorVersion;      ///< Minor number of the context version to create
-    Uint32       attributeFlags;    ///< The attribute flags to create the context with
+    unsigned int majorVersion;      ///< Major number of the context version to createDynamic
+    unsigned int minorVersion;      ///< Minor number of the context version to createDynamic
+    Uint32       attributeFlags;    ///< The attribute flags to createDynamic the context with
     bool         sRgbCapable;       ///< Whether the context framebuffer is sRGB capable
 };
 
@@ -118,7 +118,7 @@ struct ContextSettings
 /// context should follow the core or compatibility profile
 /// of all newer (>= 3.2) OpenGL specifications. For versions
 /// 3.0 and 3.1 there is only the core profile. By default
-/// a compatibility context is created. You only need to specify
+/// a compatibility context is createDynamicd. You only need to specify
 /// the core flag if you want a core profile context to use with
 /// your own OpenGL rendering.
 /// <b>Warning: The graphics module will not function if you
@@ -143,7 +143,7 @@ struct ContextSettings
 /// No failure will be reported if one or more of these values
 /// are not supported by the system; instead, SFML will try to
 /// find the closest valid match. You can then retrieve the
-/// settings that the window actually used to create its context,
+/// settings that the window actually used to createDynamic its context,
 /// with Window::getSettings().
 ///
 ////////////////////////////////////////////////////////////

@@ -116,10 +116,10 @@ Protected Member Functions</h2></td></tr>
 <tr class="memitem:a675457784284ae2f5640bbbe16729393"><td class="memItemLeft" align="right" valign="top">SocketHandle&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsf_1_1Socket.html#a675457784284ae2f5640bbbe16729393">getHandle</a> () const</td></tr>
 <tr class="memdesc:a675457784284ae2f5640bbbe16729393"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return the internal handle of the socket.  <a href="#a675457784284ae2f5640bbbe16729393">More...</a><br /></td></tr>
 <tr class="separator:a675457784284ae2f5640bbbe16729393"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aafbe140f4b1921e0d19e88cf7a61dcbc"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsf_1_1Socket.html#aafbe140f4b1921e0d19e88cf7a61dcbc">create</a> ()</td></tr>
+<tr class="memitem:aafbe140f4b1921e0d19e88cf7a61dcbc"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsf_1_1Socket.html#aafbe140f4b1921e0d19e88cf7a61dcbc">createDynamic</a> ()</td></tr>
 <tr class="memdesc:aafbe140f4b1921e0d19e88cf7a61dcbc"><td class="mdescLeft">&#160;</td><td class="mdescRight">Create the internal representation of the socket.  <a href="#aafbe140f4b1921e0d19e88cf7a61dcbc">More...</a><br /></td></tr>
 <tr class="separator:aafbe140f4b1921e0d19e88cf7a61dcbc"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af1dd898f7aa3ead7ff7b2d1c20e97781"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsf_1_1Socket.html#af1dd898f7aa3ead7ff7b2d1c20e97781">create</a> (SocketHandle handle)</td></tr>
+<tr class="memitem:af1dd898f7aa3ead7ff7b2d1c20e97781"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsf_1_1Socket.html#af1dd898f7aa3ead7ff7b2d1c20e97781">createDynamic</a> (SocketHandle handle)</td></tr>
 <tr class="memdesc:af1dd898f7aa3ead7ff7b2d1c20e97781"><td class="mdescLeft">&#160;</td><td class="mdescRight">Create the internal representation of the socket from a socket handle.  <a href="#af1dd898f7aa3ead7ff7b2d1c20e97781">More...</a><br /></td></tr>
 <tr class="separator:af1dd898f7aa3ead7ff7b2d1c20e97781"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a71f2f5c2aa99e01cafe824fee4c573be"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsf_1_1Socket.html#a71f2f5c2aa99e01cafe824fee4c573be">close</a> ()</td></tr>
@@ -320,7 +320,7 @@ class&#160;</td><td class="memItemRight" valign="bottom"><b>SocketSelector</b></
 </div>
 </div>
 <a id="aafbe140f4b1921e0d19e88cf7a61dcbc"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aafbe140f4b1921e0d19e88cf7a61dcbc">&#9670;&nbsp;</a></span>create() <span class="overload">[1/2]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#aafbe140f4b1921e0d19e88cf7a61dcbc">&#9670;&nbsp;</a></span>createDynamic() <span class="overload">[1/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -329,7 +329,7 @@ class&#160;</td><td class="memItemRight" valign="bottom"><b>SocketSelector</b></
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">void sf::Socket::create </td>
+          <td class="memname">void sf::Socket::createDynamic </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td></td>
@@ -348,7 +348,7 @@ class&#160;</td><td class="memItemRight" valign="bottom"><b>SocketSelector</b></
 </div>
 </div>
 <a id="af1dd898f7aa3ead7ff7b2d1c20e97781"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#af1dd898f7aa3ead7ff7b2d1c20e97781">&#9670;&nbsp;</a></span>create() <span class="overload">[2/2]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#af1dd898f7aa3ead7ff7b2d1c20e97781">&#9670;&nbsp;</a></span>createDynamic() <span class="overload">[2/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -357,7 +357,7 @@ class&#160;</td><td class="memItemRight" valign="bottom"><b>SocketSelector</b></
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">void sf::Socket::create </td>
+          <td class="memname">void sf::Socket::createDynamic </td>
           <td>(</td>
           <td class="paramtype">SocketHandle&#160;</td>
           <td class="paramname"><em>handle</em></td><td>)</td>
@@ -406,7 +406,7 @@ class&#160;</td><td class="memItemRight" valign="bottom"><b>SocketSelector</b></
 </div><div class="memdoc">
 
 <p>Return the internal handle of the socket. </p>
-<p>The returned handle may be invalid if the socket was not created yet (or already destroyed). This function can only be accessed by derived classes.</p>
+<p>The returned handle may be invalid if the socket was not createDynamicd yet (or already destroyed). This function can only be accessed by derived classes.</p>
 <dl class="section return"><dt>Returns</dt><dd>The internal (OS-specific) handle of the socket </dd></dl>
 
 </div>

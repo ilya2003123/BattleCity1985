@@ -108,7 +108,7 @@ private:
 ///
 /// This class encodes audio samples to a sound file. It is
 /// used internally by higher-level classes such as sf::SoundBuffer,
-/// but can also be useful if you want to create audio files from
+/// but can also be useful if you want to createDynamic audio files from
 /// custom data sources, like generated audio samples.
 ///
 /// Usage example:

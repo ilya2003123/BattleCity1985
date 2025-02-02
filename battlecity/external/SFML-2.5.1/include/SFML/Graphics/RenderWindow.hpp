@@ -48,8 +48,8 @@ public:
     ////////////////////////////////////////////////////////////
     /// \brief Default constructor
     ///
-    /// This constructor doesn't actually create the window,
-    /// use the other constructors or call create() to do so.
+    /// This constructor doesn't actually createDynamic the window,
+    /// use the other constructors or call createDynamic() to do so.
     ///
     ////////////////////////////////////////////////////////////
     RenderWindow();
@@ -57,7 +57,7 @@ public:
     ////////////////////////////////////////////////////////////
     /// \brief Construct a new window
     ///
-    /// This constructor creates the window with the size and pixel
+    /// This constructor createDynamics the window with the size and pixel
     /// depth defined in \a mode. An optional style can be passed to
     /// customize the look and behavior of the window (borders,
     /// title bar, resizable, closable, ...).
@@ -78,7 +78,7 @@ public:
     ////////////////////////////////////////////////////////////
     /// \brief Construct the window from an existing control
     ///
-    /// Use this constructor if you want to create an SFML
+    /// Use this constructor if you want to createDynamic an SFML
     /// rendering area into an already existing control.
     ///
     /// The second parameter is an optional structure specifying
@@ -139,7 +139,7 @@ public:
     /// \code
     /// sf::Vector2u windowSize = window.getSize();
     /// sf::Texture texture;
-    /// texture.create(windowSize.x, windowSize.y);
+    /// texture.createDynamic(windowSize.x, windowSize.y);
     /// texture.update(window);
     /// sf::Image screenshot = texture.copyToImage();
     /// \endcode
@@ -160,11 +160,11 @@ public:
 protected:
 
     ////////////////////////////////////////////////////////////
-    /// \brief Function called after the window has been created
+    /// \brief Function called after the window has been createDynamicd
     ///
     /// This function is called so that derived classes can
     /// perform their own specific initialization as soon as
-    /// the window is created.
+    /// the window is createDynamicd.
     ///
     ////////////////////////////////////////////////////////////
     virtual void onCreate();
@@ -204,7 +204,7 @@ protected:
 /// Here is a typical rendering and event loop with a sf::RenderWindow:
 ///
 /// \code
-/// // Declare and create a new render-window
+/// // Declare and createDynamic a new render-window
 /// sf::RenderWindow window(sf::VideoMode(800, 600), "SFML window");
 ///
 /// // Limit the framerate to 60 frames per second (this step is optional)

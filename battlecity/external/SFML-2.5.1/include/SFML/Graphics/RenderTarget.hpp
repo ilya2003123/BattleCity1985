@@ -105,7 +105,7 @@ public:
     /// \brief Get the default view of the render target
     ///
     /// The default view has the initial size of the render target,
-    /// and never changes after the target has been created.
+    /// and never changes after the target has been createDynamicd.
     ///
     /// \return The default view of the render target
     ///
@@ -378,7 +378,7 @@ protected:
     /// \brief Performs the common initialization step after creation
     ///
     /// The derived classes must call this function after the
-    /// target is created and ready for drawing.
+    /// target is createDynamicd and ready for drawing.
     ///
     ////////////////////////////////////////////////////////////
     void initialize();

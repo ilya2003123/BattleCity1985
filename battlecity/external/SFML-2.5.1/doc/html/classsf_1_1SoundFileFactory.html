@@ -43,7 +43,7 @@
 <div class="header">
   <div class="summary">
 <a href="#nested-classes">Classes</a> &#124;
-<a href="#pub-static-methods">Static Public Member Functions</a> &#124;
+<a href="#pub-static-methods">StaticObjectController Public Member Functions</a> &#124;
 <a href="classsf_1_1SoundFileFactory-members.html">List of all members</a>  </div>
   <div class="headertitle">
 <div class="title">sf::SoundFileFactory Class Reference<div class="ingroups"><a class="el" href="group__audio.html">Audio module</a></div></div>  </div>
@@ -56,7 +56,7 @@
 <p><code>#include &lt;<a class="el" href="SoundFileFactory_8hpp_source.html">SoundFileFactory.hpp</a>&gt;</code></p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-static-methods"></a>
-Static Public Member Functions</h2></td></tr>
+StaticObjectController Public Member Functions</h2></td></tr>
 <tr class="memitem:aeee396bfdbb6ac24c57e5c73c30ec105"><td class="memTemplParams" colspan="2">template&lt;typename T &gt; </td></tr>
 <tr class="memitem:aeee396bfdbb6ac24c57e5c73c30ec105"><td class="memTemplItemLeft" align="right" valign="top">static void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classsf_1_1SoundFileFactory.html#aeee396bfdbb6ac24c57e5c73c30ec105">registerReader</a> ()</td></tr>
 <tr class="memdesc:aeee396bfdbb6ac24c57e5c73c30ec105"><td class="mdescLeft">&#160;</td><td class="mdescRight">Register a new reader.  <a href="#aeee396bfdbb6ac24c57e5c73c30ec105">More...</a><br /></td></tr>
@@ -73,16 +73,16 @@ Static Public Member Functions</h2></td></tr>
 <tr class="memitem:a1bd8ebd264a5ec33962a9f7a8ca21a60"><td class="memTemplItemLeft" align="right" valign="top">static void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classsf_1_1SoundFileFactory.html#a1bd8ebd264a5ec33962a9f7a8ca21a60">unregisterWriter</a> ()</td></tr>
 <tr class="memdesc:a1bd8ebd264a5ec33962a9f7a8ca21a60"><td class="mdescLeft">&#160;</td><td class="mdescRight">Unregister a writer.  <a href="#a1bd8ebd264a5ec33962a9f7a8ca21a60">More...</a><br /></td></tr>
 <tr class="separator:a1bd8ebd264a5ec33962a9f7a8ca21a60"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af0a87110e0b8a77aada17b22a016c066"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="classsf_1_1SoundFileReader.html">SoundFileReader</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsf_1_1SoundFileFactory.html#af0a87110e0b8a77aada17b22a016c066">createReaderFromFilename</a> (const std::string &amp;filename)</td></tr>
+<tr class="memitem:af0a87110e0b8a77aada17b22a016c066"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="classsf_1_1SoundFileReader.html">SoundFileReader</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsf_1_1SoundFileFactory.html#af0a87110e0b8a77aada17b22a016c066">createDynamicReaderFromFilename</a> (const std::string &amp;filename)</td></tr>
 <tr class="memdesc:af0a87110e0b8a77aada17b22a016c066"><td class="mdescLeft">&#160;</td><td class="mdescRight">Instantiate the right reader for the given file on disk.  <a href="#af0a87110e0b8a77aada17b22a016c066">More...</a><br /></td></tr>
 <tr class="separator:af0a87110e0b8a77aada17b22a016c066"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aee7a0ff1eace98d5325eaadc7d26d50c"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="classsf_1_1SoundFileReader.html">SoundFileReader</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsf_1_1SoundFileFactory.html#aee7a0ff1eace98d5325eaadc7d26d50c">createReaderFromMemory</a> (const void *data, std::size_t sizeInBytes)</td></tr>
+<tr class="memitem:aee7a0ff1eace98d5325eaadc7d26d50c"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="classsf_1_1SoundFileReader.html">SoundFileReader</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsf_1_1SoundFileFactory.html#aee7a0ff1eace98d5325eaadc7d26d50c">createDynamicReaderFromMemory</a> (const void *data, std::size_t sizeInBytes)</td></tr>
 <tr class="memdesc:aee7a0ff1eace98d5325eaadc7d26d50c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Instantiate the right codec for the given file in memory.  <a href="#aee7a0ff1eace98d5325eaadc7d26d50c">More...</a><br /></td></tr>
 <tr class="separator:aee7a0ff1eace98d5325eaadc7d26d50c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a8d4b1f225b72a128ddba3be22f7ba5a2"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="classsf_1_1SoundFileReader.html">SoundFileReader</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsf_1_1SoundFileFactory.html#a8d4b1f225b72a128ddba3be22f7ba5a2">createReaderFromStream</a> (<a class="el" href="classsf_1_1InputStream.html">InputStream</a> &amp;stream)</td></tr>
+<tr class="memitem:a8d4b1f225b72a128ddba3be22f7ba5a2"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="classsf_1_1SoundFileReader.html">SoundFileReader</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsf_1_1SoundFileFactory.html#a8d4b1f225b72a128ddba3be22f7ba5a2">createDynamicReaderFromStream</a> (<a class="el" href="classsf_1_1InputStream.html">InputStream</a> &amp;stream)</td></tr>
 <tr class="memdesc:a8d4b1f225b72a128ddba3be22f7ba5a2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Instantiate the right codec for the given file in stream.  <a href="#a8d4b1f225b72a128ddba3be22f7ba5a2">More...</a><br /></td></tr>
 <tr class="separator:a8d4b1f225b72a128ddba3be22f7ba5a2"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a0702eb2e8a4a171ba80c7fbd04c4defc"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="classsf_1_1SoundFileWriter.html">SoundFileWriter</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsf_1_1SoundFileFactory.html#a0702eb2e8a4a171ba80c7fbd04c4defc">createWriterFromFilename</a> (const std::string &amp;filename)</td></tr>
+<tr class="memitem:a0702eb2e8a4a171ba80c7fbd04c4defc"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="classsf_1_1SoundFileWriter.html">SoundFileWriter</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsf_1_1SoundFileFactory.html#a0702eb2e8a4a171ba80c7fbd04c4defc">createDynamicWriterFromFilename</a> (const std::string &amp;filename)</td></tr>
 <tr class="memdesc:a0702eb2e8a4a171ba80c7fbd04c4defc"><td class="mdescLeft">&#160;</td><td class="mdescRight">Instantiate the right writer for the given file on disk.  <a href="#a0702eb2e8a4a171ba80c7fbd04c4defc">More...</a><br /></td></tr>
 <tr class="separator:a0702eb2e8a4a171ba80c7fbd04c4defc"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
@@ -96,7 +96,7 @@ Static Public Member Functions</h2></td></tr>
 <p class="definition">Definition at line <a class="el" href="SoundFileFactory_8hpp_source.html#l00046">46</a> of file <a class="el" href="SoundFileFactory_8hpp_source.html">SoundFileFactory.hpp</a>.</p>
 </div><h2 class="groupheader">Member Function Documentation</h2>
 <a id="af0a87110e0b8a77aada17b22a016c066"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#af0a87110e0b8a77aada17b22a016c066">&#9670;&nbsp;</a></span>createReaderFromFilename()</h2>
+<h2 class="memtitle"><span class="permalink"><a href="#af0a87110e0b8a77aada17b22a016c066">&#9670;&nbsp;</a></span>createDynamicReaderFromFilename()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -105,7 +105,7 @@ Static Public Member Functions</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">static <a class="el" href="classsf_1_1SoundFileReader.html">SoundFileReader</a>* sf::SoundFileFactory::createReaderFromFilename </td>
+          <td class="memname">static <a class="el" href="classsf_1_1SoundFileReader.html">SoundFileReader</a>* sf::SoundFileFactory::createDynamicReaderFromFilename </td>
           <td>(</td>
           <td class="paramtype">const std::string &amp;&#160;</td>
           <td class="paramname"><em>filename</em></td><td>)</td>
@@ -128,12 +128,12 @@ Static Public Member Functions</h2></td></tr>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>A new sound file reader that can read the given file, or null if no reader can handle it</dd></dl>
-<dl class="section see"><dt>See also</dt><dd><a class="el" href="classsf_1_1SoundFileFactory.html#aee7a0ff1eace98d5325eaadc7d26d50c" title="Instantiate the right codec for the given file in memory. ">createReaderFromMemory</a>, <a class="el" href="classsf_1_1SoundFileFactory.html#a8d4b1f225b72a128ddba3be22f7ba5a2" title="Instantiate the right codec for the given file in stream. ">createReaderFromStream</a> </dd></dl>
+<dl class="section see"><dt>See also</dt><dd><a class="el" href="classsf_1_1SoundFileFactory.html#aee7a0ff1eace98d5325eaadc7d26d50c" title="Instantiate the right codec for the given file in memory. ">createDynamicReaderFromMemory</a>, <a class="el" href="classsf_1_1SoundFileFactory.html#a8d4b1f225b72a128ddba3be22f7ba5a2" title="Instantiate the right codec for the given file in stream. ">createDynamicReaderFromStream</a> </dd></dl>
 
 </div>
 </div>
 <a id="aee7a0ff1eace98d5325eaadc7d26d50c"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aee7a0ff1eace98d5325eaadc7d26d50c">&#9670;&nbsp;</a></span>createReaderFromMemory()</h2>
+<h2 class="memtitle"><span class="permalink"><a href="#aee7a0ff1eace98d5325eaadc7d26d50c">&#9670;&nbsp;</a></span>createDynamicReaderFromMemory()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -142,7 +142,7 @@ Static Public Member Functions</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">static <a class="el" href="classsf_1_1SoundFileReader.html">SoundFileReader</a>* sf::SoundFileFactory::createReaderFromMemory </td>
+          <td class="memname">static <a class="el" href="classsf_1_1SoundFileReader.html">SoundFileReader</a>* sf::SoundFileFactory::createDynamicReaderFromMemory </td>
           <td>(</td>
           <td class="paramtype">const void *&#160;</td>
           <td class="paramname"><em>data</em>, </td>
@@ -176,12 +176,12 @@ Static Public Member Functions</h2></td></tr>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>A new sound file codec that can read the given file, or null if no codec can handle it</dd></dl>
-<dl class="section see"><dt>See also</dt><dd><a class="el" href="classsf_1_1SoundFileFactory.html#af0a87110e0b8a77aada17b22a016c066" title="Instantiate the right reader for the given file on disk. ">createReaderFromFilename</a>, <a class="el" href="classsf_1_1SoundFileFactory.html#a8d4b1f225b72a128ddba3be22f7ba5a2" title="Instantiate the right codec for the given file in stream. ">createReaderFromStream</a> </dd></dl>
+<dl class="section see"><dt>See also</dt><dd><a class="el" href="classsf_1_1SoundFileFactory.html#af0a87110e0b8a77aada17b22a016c066" title="Instantiate the right reader for the given file on disk. ">createDynamicReaderFromFilename</a>, <a class="el" href="classsf_1_1SoundFileFactory.html#a8d4b1f225b72a128ddba3be22f7ba5a2" title="Instantiate the right codec for the given file in stream. ">createDynamicReaderFromStream</a> </dd></dl>
 
 </div>
 </div>
 <a id="a8d4b1f225b72a128ddba3be22f7ba5a2"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a8d4b1f225b72a128ddba3be22f7ba5a2">&#9670;&nbsp;</a></span>createReaderFromStream()</h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a8d4b1f225b72a128ddba3be22f7ba5a2">&#9670;&nbsp;</a></span>createDynamicReaderFromStream()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -190,7 +190,7 @@ Static Public Member Functions</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">static <a class="el" href="classsf_1_1SoundFileReader.html">SoundFileReader</a>* sf::SoundFileFactory::createReaderFromStream </td>
+          <td class="memname">static <a class="el" href="classsf_1_1SoundFileReader.html">SoundFileReader</a>* sf::SoundFileFactory::createDynamicReaderFromStream </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="classsf_1_1InputStream.html">InputStream</a> &amp;&#160;</td>
           <td class="paramname"><em>stream</em></td><td>)</td>
@@ -213,12 +213,12 @@ Static Public Member Functions</h2></td></tr>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>A new sound file codec that can read the given file, or null if no codec can handle it</dd></dl>
-<dl class="section see"><dt>See also</dt><dd><a class="el" href="classsf_1_1SoundFileFactory.html#af0a87110e0b8a77aada17b22a016c066" title="Instantiate the right reader for the given file on disk. ">createReaderFromFilename</a>, <a class="el" href="classsf_1_1SoundFileFactory.html#aee7a0ff1eace98d5325eaadc7d26d50c" title="Instantiate the right codec for the given file in memory. ">createReaderFromMemory</a> </dd></dl>
+<dl class="section see"><dt>See also</dt><dd><a class="el" href="classsf_1_1SoundFileFactory.html#af0a87110e0b8a77aada17b22a016c066" title="Instantiate the right reader for the given file on disk. ">createDynamicReaderFromFilename</a>, <a class="el" href="classsf_1_1SoundFileFactory.html#aee7a0ff1eace98d5325eaadc7d26d50c" title="Instantiate the right codec for the given file in memory. ">createDynamicReaderFromMemory</a> </dd></dl>
 
 </div>
 </div>
 <a id="a0702eb2e8a4a171ba80c7fbd04c4defc"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a0702eb2e8a4a171ba80c7fbd04c4defc">&#9670;&nbsp;</a></span>createWriterFromFilename()</h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a0702eb2e8a4a171ba80c7fbd04c4defc">&#9670;&nbsp;</a></span>createDynamicWriterFromFilename()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -227,7 +227,7 @@ Static Public Member Functions</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">static <a class="el" href="classsf_1_1SoundFileWriter.html">SoundFileWriter</a>* sf::SoundFileFactory::createWriterFromFilename </td>
+          <td class="memname">static <a class="el" href="classsf_1_1SoundFileWriter.html">SoundFileWriter</a>* sf::SoundFileFactory::createDynamicWriterFromFilename </td>
           <td>(</td>
           <td class="paramtype">const std::string &amp;&#160;</td>
           <td class="paramname"><em>filename</em></td><td>)</td>

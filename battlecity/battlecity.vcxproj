@@ -149,6 +149,7 @@
     <ClCompile Include="src\AnimController\AnimLambdaController.cpp" />
     <ClCompile Include="src\AnimController\AnimTankController.cpp" />
     <ClCompile Include="src\AnimController\AnimWaterController.cpp" />
+    <ClCompile Include="src\AnimController\StaticObjectController.cpp" />
     <ClCompile Include="src\AnimSprite\AnimSprite\AnimSprite.cpp" />
     <ClCompile Include="src\AnimSprite\AnimTools\Animated.cpp" />
     <ClCompile Include="src\AnimSprite\externalAnimSprite\AnimatedSprite.cpp" />
@@ -267,6 +268,7 @@
     <ClInclude Include="external\SFML-2.5.1\include\SFML\Window\Window.hpp" />
     <ClInclude Include="external\SFML-2.5.1\include\SFML\Window\WindowHandle.hpp" />
     <ClInclude Include="external\SFML-2.5.1\include\SFML\Window\WindowStyle.hpp" />
+    <ClInclude Include="src\AnimController\StaticObjectController.h" />
     <ClInclude Include="src\GameObject\AbstractGameObject.h" />
     <ClInclude Include="src\AnimController\AnimLambdaController.h" />
     <ClInclude Include="src\AnimController\AnimMockController.h" />

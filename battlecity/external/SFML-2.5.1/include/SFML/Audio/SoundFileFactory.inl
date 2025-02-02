@@ -31,8 +31,8 @@ namespace sf
 {
 namespace priv
 {
-    template <typename T> SoundFileReader* createReader() {return new T;}
-    template <typename T> SoundFileWriter* createWriter() {return new T;}
+    template <typename T> SoundFileReader* createDynamicReader() {return new T;}
+    template <typename T> SoundFileWriter* createDynamicWriter() {return new T;}
 }
 
 ////////////////////////////////////////////////////////////
@@ -45,7 +45,7 @@ void SoundFileFactory::registerReader()
     // Create a new factory with the functions provided by the class
     ReaderFactory factory;
     factory.check = &T::check;
-    factory.create = &priv::createReader<T>;
+    factory.createDynamic = &priv::createDynamicReader<T>;
 
     // Add it
     s_readers.push_back(factory);
@@ -59,7 +59,7 @@ void SoundFileFactory::unregisterReader()
     // Remove the instance(s) of the reader from the array of factories
     for (ReaderFactoryArray::iterator it = s_readers.begin(); it != s_readers.end(); )
     {
-        if (it->create == &priv::createReader<T>)
+        if (it->createDynamic == &priv::createDynamicReader<T>)
             it = s_readers.erase(it);
         else
             ++it;
@@ -76,7 +76,7 @@ void SoundFileFactory::registerWriter()
     // Create a new factory with the functions provided by the class
     WriterFactory factory;
     factory.check = &T::check;
-    factory.create = &priv::createWriter<T>;
+    factory.createDynamic = &priv::createDynamicWriter<T>;
 
     // Add it
     s_writers.push_back(factory);
@@ -90,7 +90,7 @@ void SoundFileFactory::unregisterWriter()
     // Remove the instance(s) of the writer from the array of factories
     for (WriterFactoryArray::iterator it = s_writers.begin(); it != s_writers.end(); )
     {
-        if (it->create == &priv::createWriter<T>)
+        if (it->createDynamic == &priv::createDynamicWriter<T>)
             it = s_writers.erase(it);
         else
             ++it;

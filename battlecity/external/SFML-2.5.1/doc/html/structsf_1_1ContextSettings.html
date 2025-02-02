@@ -83,13 +83,13 @@ Public Attributes</h2></td></tr>
 <tr class="memdesc:ac4a097be18994dba38d73f36b0418bdc"><td class="mdescLeft">&#160;</td><td class="mdescRight">Level of antialiasing.  <a href="#ac4a097be18994dba38d73f36b0418bdc">More...</a><br /></td></tr>
 <tr class="separator:ac4a097be18994dba38d73f36b0418bdc"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a99a680d5c15a7e34c935654155dd5166"><td class="memItemLeft" align="right" valign="top">unsigned int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structsf_1_1ContextSettings.html#a99a680d5c15a7e34c935654155dd5166">majorVersion</a></td></tr>
-<tr class="memdesc:a99a680d5c15a7e34c935654155dd5166"><td class="mdescLeft">&#160;</td><td class="mdescRight">Major number of the context version to create.  <a href="#a99a680d5c15a7e34c935654155dd5166">More...</a><br /></td></tr>
+<tr class="memdesc:a99a680d5c15a7e34c935654155dd5166"><td class="mdescLeft">&#160;</td><td class="mdescRight">Major number of the context version to createDynamic.  <a href="#a99a680d5c15a7e34c935654155dd5166">More...</a><br /></td></tr>
 <tr class="separator:a99a680d5c15a7e34c935654155dd5166"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aaeb0efe9d2658b840da93b30554b100f"><td class="memItemLeft" align="right" valign="top">unsigned int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structsf_1_1ContextSettings.html#aaeb0efe9d2658b840da93b30554b100f">minorVersion</a></td></tr>
-<tr class="memdesc:aaeb0efe9d2658b840da93b30554b100f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Minor number of the context version to create.  <a href="#aaeb0efe9d2658b840da93b30554b100f">More...</a><br /></td></tr>
+<tr class="memdesc:aaeb0efe9d2658b840da93b30554b100f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Minor number of the context version to createDynamic.  <a href="#aaeb0efe9d2658b840da93b30554b100f">More...</a><br /></td></tr>
 <tr class="separator:aaeb0efe9d2658b840da93b30554b100f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a0ef3fc53802bc0197d2739466915ada5"><td class="memItemLeft" align="right" valign="top">Uint32&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structsf_1_1ContextSettings.html#a0ef3fc53802bc0197d2739466915ada5">attributeFlags</a></td></tr>
-<tr class="memdesc:a0ef3fc53802bc0197d2739466915ada5"><td class="mdescLeft">&#160;</td><td class="mdescRight">The attribute flags to create the context with.  <a href="#a0ef3fc53802bc0197d2739466915ada5">More...</a><br /></td></tr>
+<tr class="memdesc:a0ef3fc53802bc0197d2739466915ada5"><td class="mdescLeft">&#160;</td><td class="mdescRight">The attribute flags to createDynamic the context with.  <a href="#a0ef3fc53802bc0197d2739466915ada5">More...</a><br /></td></tr>
 <tr class="separator:a0ef3fc53802bc0197d2739466915ada5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac93b041bfb6cbd36034997797708a0a3"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structsf_1_1ContextSettings.html#ac93b041bfb6cbd36034997797708a0a3">sRgbCapable</a></td></tr>
 <tr class="memdesc:ac93b041bfb6cbd36034997797708a0a3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Whether the context framebuffer is sRGB capable.  <a href="#ac93b041bfb6cbd36034997797708a0a3">More...</a><br /></td></tr>
@@ -102,10 +102,10 @@ Public Attributes</h2></td></tr>
 <p>The depthBits and stencilBits members define the number of bits per pixel requested for the (respectively) depth and stencil buffers.</p>
 <p>antialiasingLevel represents the requested number of multisampling levels for anti-aliasing.</p>
 <p>majorVersion and minorVersion define the version of the OpenGL context that you want. Only versions greater or equal to 3.0 are relevant; versions lesser than 3.0 are all handled the same way (i.e. you can use any version &lt; 3.0 if you don't want an OpenGL 3 context).</p>
-<p>When requesting a context with a version greater or equal to 3.2, you have the option of specifying whether the context should follow the core or compatibility profile of all newer (&gt;= 3.2) OpenGL specifications. For versions 3.0 and 3.1 there is only the core profile. By default a compatibility context is created. You only need to specify the core flag if you want a core profile context to use with your own OpenGL rendering. <b>Warning: The graphics module will not function if you request a core profile context. Make sure the attributes are set to Default if you want to use the graphics module.</b></p>
+<p>When requesting a context with a version greater or equal to 3.2, you have the option of specifying whether the context should follow the core or compatibility profile of all newer (&gt;= 3.2) OpenGL specifications. For versions 3.0 and 3.1 there is only the core profile. By default a compatibility context is createDynamicd. You only need to specify the core flag if you want a core profile context to use with your own OpenGL rendering. <b>Warning: The graphics module will not function if you request a core profile context. Make sure the attributes are set to Default if you want to use the graphics module.</b></p>
 <p>Setting the debug attribute flag will request a context with additional debugging features enabled. Depending on the system, this might be required for advanced OpenGL debugging. OpenGL debugging is disabled by default.</p>
 <p><b>Special Note for OS X:</b> Apple only supports choosing between either a legacy context (OpenGL 2.1) or a core context (OpenGL version depends on the operating system version but is at least 3.2). Compatibility contexts are not supported. Further information is available on the <a href="https://developer.apple.com/opengl/capabilities/index.html">OpenGL Capabilities Tables</a> page. OS X also currently does not support debug contexts.</p>
-<p>Please note that these values are only a hint. No failure will be reported if one or more of these values are not supported by the system; instead, SFML will try to find the closest valid match. You can then retrieve the settings that the window actually used to create its context, with <a class="el" href="classsf_1_1Window.html#ae5b8065e92bbd0408e1fd8328e80d7d1" title="Get the settings of the OpenGL context of the window. ">Window::getSettings()</a>. </p>
+<p>Please note that these values are only a hint. No failure will be reported if one or more of these values are not supported by the system; instead, SFML will try to find the closest valid match. You can then retrieve the settings that the window actually used to createDynamic its context, with <a class="el" href="classsf_1_1Window.html#ae5b8065e92bbd0408e1fd8328e80d7d1" title="Get the settings of the OpenGL context of the window. ">Window::getSettings()</a>. </p>
 
 <p class="definition">Definition at line <a class="el" href="ContextSettings_8hpp_source.html#l00037">37</a> of file <a class="el" href="ContextSettings_8hpp_source.html">ContextSettings.hpp</a>.</p>
 </div><h2 class="groupheader">Member Enumeration Documentation</h2>
@@ -249,7 +249,7 @@ Public Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>The attribute flags to create the context with. </p>
+<p>The attribute flags to createDynamic the context with. </p>
 
 <p class="definition">Definition at line <a class="el" href="ContextSettings_8hpp_source.html#l00081">81</a> of file <a class="el" href="ContextSettings_8hpp_source.html">ContextSettings.hpp</a>.</p>
 
@@ -285,7 +285,7 @@ Public Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Major number of the context version to create. </p>
+<p>Major number of the context version to createDynamic. </p>
 
 <p class="definition">Definition at line <a class="el" href="ContextSettings_8hpp_source.html#l00079">79</a> of file <a class="el" href="ContextSettings_8hpp_source.html">ContextSettings.hpp</a>.</p>
 
@@ -303,7 +303,7 @@ Public Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Minor number of the context version to create. </p>
+<p>Minor number of the context version to createDynamic. </p>
 
 <p class="definition">Definition at line <a class="el" href="ContextSettings_8hpp_source.html#l00080">80</a> of file <a class="el" href="ContextSettings_8hpp_source.html">ContextSettings.hpp</a>.</p>
 

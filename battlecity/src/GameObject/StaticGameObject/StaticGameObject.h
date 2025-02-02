@@ -12,7 +12,7 @@ public:
 	StaticGameObject& operator=(StaticGameObject&& other) = delete;
 	virtual ~StaticGameObject() = default;
 
-	virtual void draw() = 0;
-	virtual void update() = 0;
-	virtual std::string dataForStaticGameObject() = 0;
+	void draw(sf::RenderTarget& target, sf::RenderStates states) const override {};
+	void update(sf::Event& event, sf::Time frameTime) override {};
+	virtual std::map<std::string, Animation> dataForStaticGameObject() = 0;
 };

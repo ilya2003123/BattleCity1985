@@ -349,7 +349,7 @@ public:
     Transform& scale(const Vector2f& factors, const Vector2f& center);
 
     ////////////////////////////////////////////////////////////
-    // Static member data
+    // StaticObjectController member data
     ////////////////////////////////////////////////////////////
     static const Transform Identity; ///< The identity transform (does nothing)
 

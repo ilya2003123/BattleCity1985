@@ -78,7 +78,7 @@ public:
     Uint32 toInteger() const;
 
     ////////////////////////////////////////////////////////////
-    // Static member data
+    // StaticObjectController member data
     ////////////////////////////////////////////////////////////
     static const Color Black;       ///< Black predefined color
     static const Color White;       ///< White predefined color

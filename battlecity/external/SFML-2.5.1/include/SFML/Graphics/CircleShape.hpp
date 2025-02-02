@@ -146,7 +146,7 @@ private:
 /// triangles to use, and therefore defines the quality of the circle.
 ///
 /// The number of points can also be used for another purpose; with
-/// small numbers you can create any regular polygon shape:
+/// small numbers you can createDynamic any regular polygon shape:
 /// equilateral triangle, square, pentagon, hexagon, ...
 ///
 /// \see sf::Shape, sf::RectangleShape, sf::ConvexShape

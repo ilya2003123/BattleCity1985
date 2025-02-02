@@ -47,7 +47,7 @@ public:
     ////////////////////////////////////////////////////////////
     /// \brief Default constructor
     ///
-    /// This constructor creates a default view of (0, 0, 1000, 1000)
+    /// This constructor createDynamics a default view of (0, 0, 1000, 1000)
     ///
     ////////////////////////////////////////////////////////////
     View();

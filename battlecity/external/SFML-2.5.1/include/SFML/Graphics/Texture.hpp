@@ -94,7 +94,7 @@ public:
     /// \return True if creation was successful
     ///
     ////////////////////////////////////////////////////////////
-    bool create(unsigned int width, unsigned int height);
+    bool createDynamic(unsigned int width, unsigned int height);
 
     ////////////////////////////////////////////////////////////
     /// \brief Load the texture from a file on disk
@@ -248,7 +248,7 @@ public:
     /// behavior.
     ///
     /// This function does nothing if \a pixels is null or if the
-    /// texture was not previously created.
+    /// texture was not previously createDynamicd.
     ///
     /// \param pixels Array of pixels to copy to the texture
     ///
@@ -266,7 +266,7 @@ public:
     /// arguments will lead to an undefined behavior.
     ///
     /// This function does nothing if \a pixels is null or if the
-    /// texture was not previously created.
+    /// texture was not previously createDynamicd.
     ///
     /// \param pixels Array of pixels to copy to the texture
     /// \param width  Width of the pixel region contained in \a pixels
@@ -290,7 +290,7 @@ public:
     /// will lead to an undefined behavior.
     ///
     /// This function does nothing if either texture was not
-    /// previously created.
+    /// previously createDynamicd.
     ///
     /// \param texture Source texture to copy to this texture
     ///
@@ -305,7 +305,7 @@ public:
     /// will lead to an undefined behavior.
     ///
     /// This function does nothing if either texture was not
-    /// previously created.
+    /// previously createDynamicd.
     ///
     /// \param texture Source texture to copy to this texture
     /// \param x       X offset in this texture where to copy the source texture
@@ -327,7 +327,7 @@ public:
     /// undefined behavior.
     ///
     /// This function does nothing if the texture was not
-    /// previously created.
+    /// previously createDynamicd.
     ///
     /// \param image Image to copy to the texture
     ///
@@ -342,7 +342,7 @@ public:
     /// will lead to an undefined behavior.
     ///
     /// This function does nothing if the texture was not
-    /// previously created.
+    /// previously createDynamicd.
     ///
     /// \param image Image to copy to the texture
     /// \param x     X offset in the texture where to copy the source image
@@ -364,7 +364,7 @@ public:
     /// undefined behavior.
     ///
     /// This function does nothing if either the texture or the window
-    /// was not previously created.
+    /// was not previously createDynamicd.
     ///
     /// \param window Window to copy to the texture
     ///
@@ -379,7 +379,7 @@ public:
     /// will lead to an undefined behavior.
     ///
     /// This function does nothing if either the texture or the window
-    /// was not previously created.
+    /// was not previously createDynamicd.
     ///
     /// \param window Window to copy to the texture
     /// \param x      X offset in the texture where to copy the source window
@@ -533,7 +533,7 @@ public:
     /// very specific stuff to implement that SFML doesn't support,
     /// or implement a temporary workaround until a bug is fixed.
     ///
-    /// \return OpenGL handle of the texture or 0 if not yet created
+    /// \return OpenGL handle of the texture or 0 if not yet createDynamicd
     ///
     ////////////////////////////////////////////////////////////
     unsigned int getNativeHandle() const;
@@ -697,7 +697,7 @@ private:
 ///
 /// // Create an empty texture
 /// sf::Texture texture;
-/// if (!texture.create(640, 480))
+/// if (!texture.createDynamic(640, 480))
 ///     return -1;
 ///
 /// // Create a sprite that will display the texture

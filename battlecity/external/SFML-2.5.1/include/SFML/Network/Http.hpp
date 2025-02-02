@@ -71,7 +71,7 @@ public:
         ////////////////////////////////////////////////////////////
         /// \brief Default constructor
         ///
-        /// This constructor creates a GET request, with the root
+        /// This constructor createDynamics a GET request, with the root
         /// URI ("/") and an empty body.
         ///
         /// \param uri    Target URI
@@ -84,7 +84,7 @@ public:
         ////////////////////////////////////////////////////////////
         /// \brief Set the value of a field
         ///
-        /// The field is created if it doesn't exist. The name of
+        /// The field is createDynamicd if it doesn't exist. The name of
         /// the field is case-insensitive.
         /// By default, a request doesn't contain any field (but the
         /// mandatory fields are added later by the HTTP client when
@@ -202,7 +202,7 @@ public:
         {
             // 2xx: success
             Ok             = 200, ///< Most common code returned when operation was successful
-            Created        = 201, ///< The resource has successfully been created
+            Created        = 201, ///< The resource has successfully been createDynamicd
             Accepted       = 202, ///< The request has been accepted, but will be processed later by the server
             NoContent      = 204, ///< The server didn't send any data in return
             ResetContent   = 205, ///< The server informs the client that it should clear the view (form) that caused the request to be sent

@@ -53,9 +53,9 @@ public:
     /// \brief Default constructor
     ///
     /// Constructs an empty, invalid render-texture. You must
-    /// call create to have a valid render-texture.
+    /// call createDynamic to have a valid render-texture.
     ///
-    /// \see create
+    /// \see createDynamic
     ///
     ////////////////////////////////////////////////////////////
     RenderTexture();
@@ -83,10 +83,10 @@ public:
     ///
     /// \return True if creation has been successful
     ///
-    /// \deprecated Use create(unsigned int, unsigned int, const ContextSettings&) instead.
+    /// \deprecated Use createDynamic(unsigned int, unsigned int, const ContextSettings&) instead.
     ///
     ////////////////////////////////////////////////////////////
-    SFML_DEPRECATED bool create(unsigned int width, unsigned int height, bool depthBuffer);
+    SFML_DEPRECATED bool createDynamic(unsigned int width, unsigned int height, bool depthBuffer);
 
     ////////////////////////////////////////////////////////////
     /// \brief Create the render-texture
@@ -106,7 +106,7 @@ public:
     /// \return True if creation has been successful
     ///
     ////////////////////////////////////////////////////////////
-    bool create(unsigned int width, unsigned int height, const ContextSettings& settings = ContextSettings());
+    bool createDynamic(unsigned int width, unsigned int height, const ContextSettings& settings = ContextSettings());
 
     ////////////////////////////////////////////////////////////
     /// \brief Get the maximum anti-aliasing level supported by the system
@@ -210,7 +210,7 @@ public:
     /// \brief Return the size of the rendering region of the texture
     ///
     /// The returned value is the size that you passed to
-    /// the create function.
+    /// the createDynamic function.
     ///
     /// \return Size in pixels
     ///
@@ -272,7 +272,7 @@ private:
 ///
 /// // Create a new render-texture
 /// sf::RenderTexture texture;
-/// if (!texture.create(500, 500))
+/// if (!texture.createDynamic(500, 500))
 ///     return -1;
 ///
 /// // The main loop
@@ -307,7 +307,7 @@ private:
 /// Like sf::RenderWindow, sf::RenderTexture is still able to render direct
 /// OpenGL stuff. It is even possible to mix together OpenGL calls
 /// and regular SFML drawing commands. If you need a depth buffer for
-/// 3D rendering, don't forget to request it when calling RenderTexture::create.
+/// 3D rendering, don't forget to request it when calling RenderTexture::createDynamic.
 ///
 /// \see sf::RenderTarget, sf::RenderWindow, sf::View, sf::Texture
 ///
