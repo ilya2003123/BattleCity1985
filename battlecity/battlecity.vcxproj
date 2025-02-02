@@ -146,22 +146,6 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="external\SFML-2.5.1\examples\ftp\Ftp.cpp" />
-    <ClCompile Include="external\SFML-2.5.1\examples\island\Island.cpp" />
-    <ClCompile Include="external\SFML-2.5.1\examples\joystick\Joystick.cpp" />
-    <ClCompile Include="external\SFML-2.5.1\examples\opengl\OpenGL.cpp" />
-    <ClCompile Include="external\SFML-2.5.1\examples\pong\Pong.cpp" />
-    <ClCompile Include="external\SFML-2.5.1\examples\shader\Shader.cpp" />
-    <ClCompile Include="external\SFML-2.5.1\examples\sockets\Sockets.cpp" />
-    <ClCompile Include="external\SFML-2.5.1\examples\sockets\TCP.cpp" />
-    <ClCompile Include="external\SFML-2.5.1\examples\sockets\UDP.cpp" />
-    <ClCompile Include="external\SFML-2.5.1\examples\sound-capture\SoundCapture.cpp" />
-    <ClCompile Include="external\SFML-2.5.1\examples\sound\Sound.cpp" />
-    <ClCompile Include="external\SFML-2.5.1\examples\voip\Client.cpp" />
-    <ClCompile Include="external\SFML-2.5.1\examples\voip\Server.cpp" />
-    <ClCompile Include="external\SFML-2.5.1\examples\voip\VoIP.cpp" />
-    <ClCompile Include="external\SFML-2.5.1\examples\win32\Win32.cpp" />
-    <ClCompile Include="external\SFML-2.5.1\examples\window\Window.cpp" />
     <ClCompile Include="src\AnimController\AnimLambdaController.cpp" />
     <ClCompile Include="src\AnimController\AnimTankController.cpp" />
     <ClCompile Include="src\AnimController\AnimWaterController.cpp" />
@@ -185,7 +169,6 @@
     <ClCompile Include="src\Window\Window.cpp" />
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="external\SFML-2.5.1\examples\shader\Effect.hpp" />
     <ClInclude Include="external\SFML-2.5.1\include\SFML\Audio.hpp" />
     <ClInclude Include="external\SFML-2.5.1\include\SFML\Audio\AlResource.hpp" />
     <ClInclude Include="external\SFML-2.5.1\include\SFML\Audio\Export.hpp" />
@@ -926,31 +909,6 @@
     <None Include="external\SFML-2.5.1\doc\html\Window_2Export_8hpp_source.html" />
     <None Include="external\SFML-2.5.1\doc\html\Window_2Window_8hpp_source.html" />
     <None Include="external\SFML-2.5.1\doc\html\Window_8hpp_source.html" />
-    <None Include="external\SFML-2.5.1\examples\ftp\ftp.exe" />
-    <None Include="external\SFML-2.5.1\examples\island\island.exe" />
-    <None Include="external\SFML-2.5.1\examples\island\resources\terrain.frag" />
-    <None Include="external\SFML-2.5.1\examples\island\resources\terrain.vert" />
-    <None Include="external\SFML-2.5.1\examples\joystick\joystick.exe" />
-    <None Include="external\SFML-2.5.1\examples\opengl\opengl.exe" />
-    <None Include="external\SFML-2.5.1\examples\pong\pong.exe" />
-    <None Include="external\SFML-2.5.1\examples\shader\resources\billboard.frag" />
-    <None Include="external\SFML-2.5.1\examples\shader\resources\billboard.geom" />
-    <None Include="external\SFML-2.5.1\examples\shader\resources\billboard.vert" />
-    <None Include="external\SFML-2.5.1\examples\shader\resources\blink.frag" />
-    <None Include="external\SFML-2.5.1\examples\shader\resources\blur.frag" />
-    <None Include="external\SFML-2.5.1\examples\shader\resources\edge.frag" />
-    <None Include="external\SFML-2.5.1\examples\shader\resources\pixelate.frag" />
-    <None Include="external\SFML-2.5.1\examples\shader\resources\storm.vert" />
-    <None Include="external\SFML-2.5.1\examples\shader\resources\wave.vert" />
-    <None Include="external\SFML-2.5.1\examples\shader\shader.exe" />
-    <None Include="external\SFML-2.5.1\examples\sockets\sockets.exe" />
-    <None Include="external\SFML-2.5.1\examples\sound-capture\sound-capture.exe" />
-    <None Include="external\SFML-2.5.1\examples\sound\resources\ding.flac" />
-    <None Include="external\SFML-2.5.1\examples\sound\resources\orchestral.ogg" />
-    <None Include="external\SFML-2.5.1\examples\sound\sound.exe" />
-    <None Include="external\SFML-2.5.1\examples\voip\voip.exe" />
-    <None Include="external\SFML-2.5.1\examples\win32\win32.exe" />
-    <None Include="external\SFML-2.5.1\examples\window\window.exe" />
     <None Include="external\SFML-2.5.1\include\SFML\Audio\SoundFileFactory.inl" />
     <None Include="external\SFML-2.5.1\include\SFML\Graphics\Glsl.inl" />
     <None Include="external\SFML-2.5.1\include\SFML\Graphics\Rect.inl" />
@@ -1051,26 +1009,6 @@
     <Image Include="external\SFML-2.5.1\doc\html\tab_b.png" />
     <Image Include="external\SFML-2.5.1\doc\html\tab_h.png" />
     <Image Include="external\SFML-2.5.1\doc\html\tab_s.png" />
-    <Image Include="external\SFML-2.5.1\examples\opengl\resources\background.jpg" />
-    <Image Include="external\SFML-2.5.1\examples\opengl\resources\texture.jpg" />
-    <Image Include="external\SFML-2.5.1\examples\shader\resources\background.jpg" />
-    <Image Include="external\SFML-2.5.1\examples\shader\resources\devices.png" />
-    <Image Include="external\SFML-2.5.1\examples\shader\resources\logo.png" />
-    <Image Include="external\SFML-2.5.1\examples\shader\resources\sfml.png" />
-    <Image Include="external\SFML-2.5.1\examples\shader\resources\text-background.png" />
-    <Image Include="external\SFML-2.5.1\examples\win32\resources\image1.jpg" />
-    <Image Include="external\SFML-2.5.1\examples\win32\resources\image2.jpg" />
-  </ItemGroup>
-  <ItemGroup>
-    <Font Include="external\SFML-2.5.1\examples\island\resources\sansation.ttf" />
-    <Font Include="external\SFML-2.5.1\examples\joystick\resources\sansation.ttf" />
-    <Font Include="external\SFML-2.5.1\examples\opengl\resources\sansation.ttf" />
-    <Font Include="external\SFML-2.5.1\examples\pong\resources\sansation.ttf" />
-    <Font Include="external\SFML-2.5.1\examples\shader\resources\sansation.ttf" />
-  </ItemGroup>
-  <ItemGroup>
-    <Media Include="external\SFML-2.5.1\examples\pong\resources\ball.wav" />
-    <Media Include="external\SFML-2.5.1\examples\sound\resources\canary.wav" />
   </ItemGroup>
   <ItemGroup>
     <Library Include="external\SFML-2.5.1\lib\flac.lib" />

@@ -1,5 +1,5 @@
 #pragma once
-#include "/github/battlecity/BattleCity1985/battlecity/src/GameObject/DynamicGameObject/DynamicGameObject.h"
+#include "../DynamicGameObject.h"
 #include "../../../AnimController/AnimWaterController.h"
 #include "../../../AnimSprite/AnimSprite/AnimSprite.h"
 

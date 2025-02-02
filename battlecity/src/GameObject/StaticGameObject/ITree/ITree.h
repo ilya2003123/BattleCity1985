@@ -1,5 +1,5 @@
 #pragma once
-#include "/github/battlecity/BattleCity1985/battlecity/src/GameObject\StaticGameObject/StaticGameObject.h"
+#include "../StaticGameObject.h"
 #include "../../../DataLoad/DataLoad.h"
 #include "../../../AnimSprite/AnimSprite/AnimSprite.h"
 
@@ -15,7 +15,7 @@ public:
 
 	void draw(sf::RenderTarget& target, sf::RenderStates states) const override;
 	void update(sf::Event& event, sf::Time frameTime) override;
-	virtual std::string dataForStaticGameObject() override;;
+	std::string dataForStaticGameObject() override;;
 
 private:
 	AnimSprite m_animSprite;

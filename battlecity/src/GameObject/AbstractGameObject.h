@@ -14,7 +14,7 @@ public:
 	AbstractGameObject& operator=(AbstractGameObject&& other) = delete;
 	virtual ~AbstractGameObject() = default;
 
-	void draw() override {};
-	void update() override {};
+	void draw(sf::RenderTarget& target, sf::RenderStates states) const override {};
+	void update(sf::Event& event, sf::Time frameTime) override {};
 
 };
