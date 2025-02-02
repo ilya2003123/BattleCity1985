@@ -1,11 +1,10 @@
 #pragma once
-//#include "../AbstractGameObject/AbstractGameObject.h"
-#include "../DataLoad/DataLoad.h"
-#include "../ISprite/ISprite.h"
-#include "../AnimController/AnimWaterController.h"
-#include "../AnimSprite/AnimSprite/AnimSprite.h"
+#include "/github/battlecity/BattleCity1985/battlecity/src/GameObject\StaticGameObject/StaticGameObject.h"
+#include "../../../DataLoad/DataLoad.h"
+#include "../../../ISprite/ISprite.h"
+#include "../../../AnimSprite/AnimSprite/AnimSprite.h"
 
-class IBrickWall : public ISprite
+class IBrickWall : public StaticGameObject
 {
 public:
 	IBrickWall() = delete;

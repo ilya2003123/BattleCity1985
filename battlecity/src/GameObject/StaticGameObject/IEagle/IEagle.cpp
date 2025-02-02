@@ -1,11 +1,5 @@
 #include "IEagle.h"
 
-IEagle::IEagle(float x, float y)
-	: m_x(x), m_y(y)
-{
-	m_animSprite.setPosition(x, y);
-}
-
 void IEagle::draw(sf::RenderTarget& target, sf::RenderStates states) const
 {
 	states.transform *= getTransform();

@@ -1,11 +1,9 @@
 #pragma once
-//#include "../AbstractGameObject/AbstractGameObject.h"
-#include "../DataLoad/DataLoad.h"
-#include "../ISprite/ISprite.h"
-#include "../AnimController/AnimTankController.h"
-#include "../AnimSprite/AnimSprite/AnimSprite.h"
+#include "/github/battlecity/BattleCity1985/battlecity/src/GameObject/DynamicGameObject/DynamicGameObject.h"
+#include "../../../AnimController/AnimTankController.h"
+#include "../../../AnimSprite/AnimSprite/AnimSprite.h"
 
-class ITank : public ISprite
+class ITank : public DynamicGameObject
 {
 public:
 	ITank() = delete;
@@ -14,12 +12,12 @@ public:
 	ITank(const ITank& other) = delete;
 	ITank(const ITank&& other) = delete;
 	ITank& operator=(const ITank& other) = delete;
-	ITank& operator=(ITank&& other) noexcept = default;
+	ITank& operator=(ITank&& other) = delete;
 
 	void draw(sf::RenderTarget& target, sf::RenderStates states) const override;
 	void update(sf::Event& event, sf::Time frameTime) override;
 	void TankControl(sf::Event& event, sf::Time frameTime);
-
+	std::map<std::string, Animation> dataForDynamicGameObject() override;
 
 private:
 	const float SPEED = 2.0f; 

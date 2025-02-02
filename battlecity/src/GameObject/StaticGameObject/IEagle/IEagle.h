@@ -1,22 +1,21 @@
 #pragma once
-//#include "../AbstractGameObject/AbstractGameObject.h"
-#include "../DataLoad/DataLoad.h"
-#include "../ISprite/ISprite.h"
-#include "../AnimSprite/AnimSprite/AnimSprite.h"
+#include "/github/battlecity/BattleCity1985/battlecity/src/GameObject\StaticGameObject/StaticGameObject.h"
+#include "../../../DataLoad/DataLoad.h"
+#include "../../../AnimSprite/AnimSprite/AnimSprite.h"
 
-class IEagle : public ISprite
+class IEagle : public StaticGameObject
 {
 public:
 	IEagle() = delete;
-	IEagle(float x, float y);
 	virtual ~IEagle() = default;
 	IEagle(const IEagle& other) = delete;
 	IEagle(const IEagle&& other) = delete;
 	IEagle& operator=(const IEagle& other) = delete;
-	IEagle& operator=(IEagle&& other) noexcept = default;
+	IEagle& operator=(IEagle&& other) = delete;
 
 	void draw(sf::RenderTarget& target, sf::RenderStates states) const override;
 	void update(sf::Event& event, sf::Time frameTime) override;
+	virtual std::string dataForStaticGameObject() override;
 
 private:
 	float m_x = 0.0f, m_y = 0.0f;

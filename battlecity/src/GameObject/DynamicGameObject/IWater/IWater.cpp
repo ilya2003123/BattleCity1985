@@ -16,3 +16,8 @@ void IWater::update(sf::Event& event, sf::Time frameTime)
 {
 	m_animSprite.update(event, frameTime);
 }
+
+std::map<std::string, Animation> IWater::dataForDynamicGameObject()
+{
+	return resource::create(utils::PATH_TO_WATER, utils::framesWater);
+}

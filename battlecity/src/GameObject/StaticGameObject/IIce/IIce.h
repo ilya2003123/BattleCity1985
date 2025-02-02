@@ -1,11 +1,9 @@
 #pragma once
-//#include "../AbstractGameObject/AbstractGameObject.h"
-#include "../DataLoad/DataLoad.h"
-#include "../ISprite/ISprite.h"
-#include "../AnimController/AnimWaterController.h"
-#include "../AnimSprite/AnimSprite/AnimSprite.h"
+#include "/github/battlecity/BattleCity1985/battlecity/src/GameObject\StaticGameObject/StaticGameObject.h"
+#include "../../../DataLoad/DataLoad.h"
+#include "../../../AnimSprite/AnimSprite/AnimSprite.h"
 
-class IIce : public ISprite
+class IIce : public StaticGameObject
 {
 public:
 	IIce() = delete;
@@ -17,6 +15,7 @@ public:
 
 	void draw(sf::RenderTarget& target, sf::RenderStates states) const override;
 	void update(sf::Event& event, sf::Time frameTime) override;
+	virtual std::string dataForStaticGameObject() override;
 
 private:
 	AnimSprite m_animSprite;

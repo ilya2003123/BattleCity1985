@@ -7,6 +7,11 @@ ITank::ITank(float x, float y)
 	m_animSprite.setState("up");
 }
 
+std::map < std::string, Animation> ITank::dataForDynamicGameObject()
+{
+	return resource::create(utils::PATH_TO_YELLOW_TANK_1, utils::framesTank);
+}
+
 void ITank::draw(sf::RenderTarget& target, sf::RenderStates states) const
 {
 	states.transform *= getTransform();

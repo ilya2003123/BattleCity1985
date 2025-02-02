@@ -1,7 +1,7 @@
 #pragma once
 #include "IAnimController.h"
 #include <functional>
-#include "../ITank/ITank.h"
+#include "../GameObject/DynamicGameObject/ITank/ITank.h"
 
 class AnimTankController : public IAnimController
 {
