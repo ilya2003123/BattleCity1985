@@ -1,4 +1,4 @@
-#include"Map.h"
+#include"Map.h"  
 
 std::vector<std::string> Map::createMap(const std::string& path, IScene& m_scene)
 {
@@ -9,7 +9,7 @@ std::vector<std::string> Map::createMap(const std::string& path, IScene& m_scene
 	}
     std::string currentLine;
     int rowNumber = 0;
-    const int tileSize = 70; 
+    const int tileSize = 80; 
 
     while (std::getline(file, currentLine)) {
         for (int col = 0; col < currentLine.size(); col++) {
@@ -17,13 +17,12 @@ std::vector<std::string> Map::createMap(const std::string& path, IScene& m_scene
             const int y = rowNumber * tileSize;
 
             switch (currentLine[col]) {
-            case '#': m_scene.addISprite(new IConcreteWall(x, y)); break;
+            case '8': m_scene.addISprite(new IConcreteWall(x, y)); break;
             case '=': m_scene.addISprite(new IWater(x, y)); break;
-            case '8': m_scene.addISprite(new IBrickWall(x, y)); break;
+            case '#': m_scene.addISprite(new IBrickWall(x, y)); break;
             case '%': m_scene.addISprite(new IEagle(x, y)); break;
             case '1': m_scene.addISprite(new ITank(x, y)); break;
-            case '/': m_scene.addISprite(new ITree(x, y)); break;
-            case '0': break; 
+            case '*': m_scene.addISprite(new ITree(x, y)); break;
             default:
                 break;
             }
