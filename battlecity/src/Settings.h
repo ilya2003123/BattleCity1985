@@ -3,15 +3,6 @@
 
 namespace utils
 {
-
-	//static int k = 0; 
-	//
-	//inline void* operator new(size_t size) 
-	// {
-	//	k+=size; 
-	//	std::cout << k << "\n";
-	//	return malloc(size);
-	// }
 	const sf::Vector2f waterPosition(100, 100);
 
 	const std::map<std::string, std::vector<std::tuple<int, bool, int, int>>> framesWater =
@@ -88,6 +79,7 @@ namespace utils
 	const std::string MAIN_PATH_TO_BULLET = "bullet/";
 	const std::string MAIN_PATH_TO_EXPLOSION = "explosion/";
 	const std::string MAIN_PATH_TO_REWARD = "reward/";
+	const std::string MAIN_PATH_TO_LEVELS = "levels/";
 
 	const std::string  PATH_TO_YELLOW_TANK_1 = MAIN_PATH_TO_DATA + MAIN_PATH_TO_RESOURCE + MAIN_PATH_TO_YELLOW_TANK + "yellowTank_1";
 	const std::string  PATH_TO_YELLOW_TANK_2 = MAIN_PATH_TO_DATA + MAIN_PATH_TO_RESOURCE + MAIN_PATH_TO_YELLOW_TANK + "yellowTank_2";
@@ -185,6 +177,8 @@ namespace utils
 	const std::string  PATH_TO_PAUSE = MAIN_PATH_TO_DATA + MAIN_PATH_TO_RESOURCE + "pause";
 	const std::string  PATH_TO_GAME_OVER = MAIN_PATH_TO_DATA + MAIN_PATH_TO_RESOURCE + "gameOver";
 	const std::string  PATH_TO_BOARDER = MAIN_PATH_TO_DATA + MAIN_PATH_TO_RESOURCE + "boarder";
+
+	const std::string  PATH_TO_LEVEL_1 = MAIN_PATH_TO_DATA + MAIN_PATH_TO_LEVELS + "lvl_1";
 
 	const std::string  PATH_TO_TEXTURE = MAIN_PATH_TO_DATA + "texture.png";
 }

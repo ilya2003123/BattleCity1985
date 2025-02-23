@@ -3,9 +3,7 @@
 Window::Window(IRenderEngine& engine) noexcept
 	: m_engine(engine)
 {
-	m_scene.addISprite(new IWater(0, 0));
-	m_scene.addISprite(new IBrickWall(100, 0));
-	m_scene.addISprite(new ITank(0, 0));
+	Map::createMap("data/levels/lvl_1", m_scene);
 }
 
 void Window::draw()

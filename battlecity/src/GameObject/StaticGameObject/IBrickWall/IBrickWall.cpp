@@ -20,5 +20,5 @@ void IBrickWall::update(sf::Event& event, sf::Time frameTime)
 
 std::map<std::string, Animation> IBrickWall::dataForStaticGameObject()
 {
-	return resource::createDynamic(utils::PATH_TO_BRICK_WALL, utils::frameStatic);
+	return resource::createStatic(utils::PATH_TO_BRICK_WALL, utils::frameStatic);
 }

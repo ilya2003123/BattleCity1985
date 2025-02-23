@@ -104,6 +104,13 @@ namespace LoaderStatic
 
 		return framesResult;
 	}
+	static auto createStaticNoAnimations(const std::map<std::string, std::vector<sf::IntRect>>& frames)
+	{
+		std::map<std::string, Animation> no_animations;
+		for (const auto [name, rects] : frames)
+			no_animations[name] = Tools::generateAnimation(Holder::Atlas->getTexture(), rects);
+		return no_animations;
+	}
 }
 
 namespace resource
@@ -118,7 +125,7 @@ namespace resource
 	{
 		const auto frameResult = LoaderStatic::loaderStaticData(Atlas::createIntRect(path), settings);
 
-		return frameResult;
+		return LoaderStatic::createStaticNoAnimations(frameResult);
 	}
 
 }
