@@ -21,5 +21,6 @@ public:
 private:
 	float m_x = 0.0f, m_y = 0.0f;
 	float m_vx = 0.0f, m_vy = 0.0f;
+	const int DEEP = 3;
 	AnimSprite m_animSprite;
 };

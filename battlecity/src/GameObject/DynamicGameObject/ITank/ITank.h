@@ -25,6 +25,7 @@ private:
 	float m_vx = 0.0f, m_vy = 0.0f;
 	float m_speed = 0.0f;
 	int m_control = 0;
+	const int DEEP = 2;
 	AnimSprite m_animSprite;
 	bool m_isRestart = 0;
 	sf::Keyboard::Key m_keyPressed = sf::Keyboard::Unknown;

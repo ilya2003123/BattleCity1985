@@ -1,34 +1,51 @@
 #include"Map.h"  
 
-std::vector<std::string> Map::createMap(const std::string& path, IScene& m_scene)
+void Map::createMap(const std::string& path, IScene& m_scene, const int& DEEP)
 {
+    if (DEEP == 0)
+    {
+        return;
+    }
 	std::ifstream file(path);
 	if (!file.is_open())
 	{
 		utils::print("Can't open file: " + path);
 	}
     std::string currentLine;
-    int rowNumber = 0;
-    const int tileSize = 80; 
-
-    while (std::getline(file, currentLine)) {
-        for (int col = 0; col < currentLine.size(); col++) {
-            const int x = col * tileSize;
-            const int y = rowNumber * tileSize;
-
-            switch (currentLine[col]) {
-            case '8': m_scene.addISprite(new IConcreteWall(x, y)); break;
-            case '=': m_scene.addISprite(new IWater(x, y)); break;
-            case '#': m_scene.addISprite(new IBrickWall(x, y)); break;
-            case '%': m_scene.addISprite(new IEagle(x, y)); break;
-            case '1': m_scene.addISprite(new ITank(x, y)); break;
-            case '*': m_scene.addISprite(new ITree(x, y)); break;
-            default:
-                break;
+    int rowNumber = 0; 
+    while (std::getline(file, currentLine)) 
+    {
+        for (int columnNumber = 0; columnNumber < currentLine.size(); columnNumber++) {
+            const int X = columnNumber  * 80;
+            const int Y = rowNumber * 80;
+            if (DEEP == 3)
+            {
+                switch (currentLine[columnNumber])
+                {
+                case '8': m_scene.addISprite(new IConcreteWall(X, Y)); break;
+                case '=': m_scene.addISprite(new IWater(X, Y)); break;
+                case '#': m_scene.addISprite(new IBrickWall(X, Y)); break;
+                case '%': m_scene.addISprite(new IEagle(X, Y)); break;
+                }
+            }
+            else if (DEEP == 2)
+            {
+                switch (currentLine[columnNumber])
+                {
+                    case '1': m_scene.addISprite(new ITank(X, Y)); break;
+                }
+            }
+            else if (DEEP == 1)
+            {
+                switch (currentLine[columnNumber])
+                {
+                    case '*': m_scene.addISprite(new ITree(X, Y)); break;
+                }
             }
         }
         rowNumber++;
     }
     file.close();
-	return std::vector<std::string>();
+
+    createMap(path, m_scene, DEEP - 1);
 }

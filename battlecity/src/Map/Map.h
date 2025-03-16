@@ -19,7 +19,7 @@ public:
 	Map& operator=(const Map& other) = delete;
 	Map& operator=(Map&& other) noexcept = delete;
 	~Map() = default;
-	static std::vector<std::string> createMap(const std::string& path, IScene& m_scene);
+	static void createMap(const std::string& path, IScene& m_scene, const int& DEEP);
 private:
 	IRenderEngine& m_engine;
 	IScene m_scene;

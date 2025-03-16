@@ -64,8 +64,12 @@ namespace utils
 	const int APP_FPS = 60;
 
 	const std::string APP_TITLE_WINDOW = "Battle City";
-	const int APP_WIDTH = 800;
-	const int APP_HEIGHT = 600;
+	const int APP_WIDTH = 1200;
+	const int APP_HEIGHT = 1000;
+
+	const float BACKGROUND_WIDTH = 800;
+	const float BACKGROUND_HEIGHT = 600;
+
 
 	const std::string MAIN_PATH_TO_DATA = "data/";
 	const std::string MAIN_PATH_TO_RESOURCE = "resource/";
